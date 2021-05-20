@@ -13,6 +13,8 @@ class CreateEmpresas extends Migration
      */
     public function up()
     {
+                    // verificar amanha 
+
         Schema::create('TBL_EMPRESAS', function (Blueprint $table) {
             $table->integer('emp_id')->unsigned();
             $table->string('emp_logo',100);             // logo da empresa 
