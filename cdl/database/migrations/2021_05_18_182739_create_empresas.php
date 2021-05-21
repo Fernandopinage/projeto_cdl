@@ -40,6 +40,7 @@ class CreateEmpresas extends Migration
             $table->string('emp_cod_assoc',20);         // campo para preencher codigo caso check box seja preenchido 
             $table->string('emp_senha',30);             // definir a senha de acesso (obrigatorio)
             $table->char('emp_termo',1);                // check com politica de termo de dados do site. (obrigatorio)
+            $table->char('emp_status',1);               // status ativo ou inativo. (obrigatorio)
             $table->timestamps();
         });
     }

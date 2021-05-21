@@ -27,7 +27,8 @@ class CreateOms extends Migration
             $table->string('oms_bairro',100);           //  bairro   
             $table->string('oms_logradouro',100);       //  logradouro
             $table->string('oms_numero',10);            //  nuemro da residencia
-            $table->string('oms_complemento',100);      //  complemento      
+            $table->string('oms_complemento',100);      //  complemento   
+            $table->char('oms_status',1);               //  status     
             $table->timestamps();
         });
     }
