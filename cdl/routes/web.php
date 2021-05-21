@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\indexController;
+use App\Http\Controllers\indexController; // necessario instancia 
 /*
 |--------------------------------------------------------------------------
 | Web Routes

@@ -13,7 +13,7 @@ class CreateVagas extends Migration
      */
     public function up()
     {
-                    // Anuncio de Vagas
+                    // Anuncio de Vagas 
 
         Schema::create('TBL_VAGAS', function (Blueprint $table) {
             $table->integer('vag_id')->unsigned();      // id auto increment

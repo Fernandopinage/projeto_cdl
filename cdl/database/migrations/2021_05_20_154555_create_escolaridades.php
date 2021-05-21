@@ -13,6 +13,9 @@ class CreateEscolaridades extends Migration
      */
     public function up()
     {
+                // escolaridade
+                
+
         Schema::create('TBL_ESCOLARIDADE', function (Blueprint $table) {
             $table->integer('esc_id')->unsigned();      //  chave primaria auto incremento
             $table->string('esc_fundamental',10);       //  selecionar se possui ensino fundamental(completo/incompleto)

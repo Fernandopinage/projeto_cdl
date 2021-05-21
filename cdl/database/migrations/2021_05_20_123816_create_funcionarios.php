@@ -13,6 +13,9 @@ class CreateFuncionarios extends Migration
      */
     public function up()
     {
+
+            // funcionanrio
+
         Schema::create('TBL_FUNCIONARIOS', function (Blueprint $table) {
             $table->integer('fun_id')->unsigned();      //  chave primaria auto incremento
             $table->string('fun_nome',100);             //  nome do funcionario     

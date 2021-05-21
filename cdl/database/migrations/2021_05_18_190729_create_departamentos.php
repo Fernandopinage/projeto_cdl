@@ -13,6 +13,8 @@ class CreateDepartamentos extends Migration
      */
     public function up()
     {
+            // Departamento
+
         Schema::create('TBL_DEPARTAMENTO', function (Blueprint $table) {
             $table->integer('dep_id')->unsigned();      // id auto increment
             $table->string('dep_nome',100);             // nome do departamento

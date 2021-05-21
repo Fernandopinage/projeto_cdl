@@ -13,8 +13,10 @@ class CreateCargos extends Migration
      */
     public function up()
     {
+                //  Cargo
+
         Schema::create('TBL_CARGOS', function (Blueprint $table) {
-            $table->integer('car_id')->unsigned();          // id auto increment
+            $table->integer('car_id')->unsigned();      // id auto increment
             $table->string('car_nome',100);             // nome do cargo
             $table->string('car_descricao',100);        // descricao do cargo
             $table->timestamps();
