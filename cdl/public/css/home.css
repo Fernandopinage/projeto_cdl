@@ -1,0 +1,36 @@
+#menu{
+    padding: 30px;
+    background-color: #284D92;
+}
+
+#logo{
+    
+    width: 190px;
+    height: 80px;
+    
+}
+
+#banner-principal{
+
+ 
+    background: url('/img/banner-principal_.jpg'); 
+    width: 100%;
+    height: 70%;
+    margin: 5px;    
+    padding: 150px;
+   
+}
+#row{
+
+    border-radius: 15px;
+    background-color: #fff;
+    padding: 50px;
+}
+
+.h1{
+   color: #284D92;
+}
+#cards{
+
+    margin-top: 50px;
+}
