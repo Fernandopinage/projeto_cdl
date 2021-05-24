@@ -9,6 +9,7 @@
     <title>CDL</title>
 </head>
 <body>
+
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"><img id="logo" src="/img/cdl_logo.png"></a>
@@ -79,7 +80,7 @@
 
         </div>
     </div>
-    <div class="container" id="cards">
+    <div class="container" id="container">
         <div class="row">
             <div class="col-sm-4">
                 <div class="card">
@@ -114,8 +115,45 @@
         </div>
     
     </div>
+    <hr>
+    <div class="container" id="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <h6>CDL MANAUS - DJALMA BATISTA</h6>
+                <span>Cond. Amazonas Flat Service, 3000
+                    Loja A, Torre Sul
+                    Av. Djalma Batista | Chapada | 69.050-010</span>
+                <span>
+                    Segunda a Quinta-feira das 08h às 18h
+                    Sexta-feira das 08h às 17h</span>
+            </div>
+            <div class="col-sm-3">
+                <h6>CDL MANAUS - CENTRO</h6>
+                <span>Rua Rui Barbosa, 156
+                    Centro | 69.010-220</span>
+                <span> Segunda a Quinta-feira das 08h às 18h
+                    Sexta-feira das 08h às 17h</span>
+            </div>
+            <div class="col-sm-3">
+                <h6>UTV - RAIZ</h6>
+                <span>Rua Delfim de Souza, 125
+                    Raiz | 69.068-020</span>
+                <span>Segunda a Quinta-feira das 08h às 18h
+                    Sexta-feira das 08h às 17h</span>
+            </div>
+            <div class="col-sm-3">
+                <h6>ATENDIMENTO</h6>
+                <span>Dúvidas
+                    + 55 92 3627-2867<br>
+                    + 55 92 3627-2868<br>
+                    suporte@cdlmanaus.org.br</span>
+            </div>
+        </div>
+    </div>
     
 </body>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
 </html>

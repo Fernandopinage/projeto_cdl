@@ -5,7 +5,7 @@
 
 #logo{
     
-    width: 190px;
+    width: 200px;
     height: 80px;
     
 }
@@ -15,22 +15,59 @@
  
     background: url('/img/banner-principal_.jpg'); 
     width: 100%;
-    height: 70%;
+    height: 100%;
     margin: 5px;    
     padding: 150px;
+    background-attachment: fixed, scroll;
+    background-repeat: no-repeat, repeat-y;
    
 }
-#row{
+.form-signin{
 
-    border-radius: 15px;
+    max-width: 880px;
+    padding: 35px 35px 45px 35px;
+    margin:  auto;
     background-color: #fff;
-    padding: 50px;
+    border-radius: 7px;
+    
+}
+#text-pesquisar{
+    margin-bottom: 40px;
 }
 
 .h1{
    color: #284D92;
 }
-#cards{
+.container-fluid{
+
+    margin-top: -5px;
+ 
+}
+#container{
 
     margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#p-1{
+    font-family: 'Roboto Slab', serif;
+    font-size: 25px;
+    top: -250px;
+    position: absolute;
+    margin: 0px, 0px, 0px, 15px;
+
+  }
+  span{
+    color: rgb(163, 157, 157);  
+    font-size: 11px;
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Roboto Slab', serif;
+  }
+
+  @media (min-width: 576px) { 
+
+   
+
+       
+    
 }
