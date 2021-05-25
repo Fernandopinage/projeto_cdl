@@ -19,6 +19,7 @@
     padding: 150px 0px 150px 0px;
     background-attachment: fixed, scroll;
     background-repeat: no-repeat, repeat-y;
+    
    
 }
 
@@ -28,8 +29,8 @@
     max-width: 880px;
     padding: 35px 35px 45px 35px;
     margin:  auto;
-    background-color: #fff;
-    border-radius: 7px;
+    background-color: rgba(252, 250, 250, 0.575);
+    border-radius: 25px;
     
 }
 #text-pesquisar{
