@@ -1,4 +1,4 @@
-@extends('layout.login')
+@extends('layout.militar')
 
 @section('login')
     

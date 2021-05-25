@@ -1,0 +1,70 @@
+img{
+
+    width: 150px;
+    height: 60px;
+  }
+
+
+
+  .form-signin {
+    max-width: 480px;
+    padding: 35px 35px 45px 35px;
+    margin:  auto;
+    margin-top: 150px;
+    margin-left: 70px;
+    background-color: #242966;
+    box-shadow: 3px 3px 4px 1px rgba(0, 0, 0, 0.342);
+    border-radius: 17px;
+  
+  }
+
+  .btn{
+    color: #fff;
+    background-color: #38B6FF;
+  }
+  .btn:hover{
+
+    color: #f0ede9;
+    background-color: #3998cf;
+    border-color: #0a0a0a;
+  }
+
+  a:link{
+    
+    color: #523617;
+  }
+  a:hover {
+    text-decoration: none;
+    color: black;
+  }
+  hr{
+    color: #fff;
+  }
+  h2{
+    color: #fff;
+  }
+  .nav-link{
+      color: #fff;
+  }
+  .nav-link:hover{
+
+    color: #fff;
+  }
+
+  .photo{
+    background: url('/img/man2-candidato.png'); 
+    position:relative;
+    margin-top: -450px;
+    margin-left: -10px;
+    float: right;
+    width:500px;
+    height: 500px;
+    background-color: #fff;
+    background-size: cover;
+    border: 0px solid #fff;
+}
+  @media only screen and (max-width: 1100px) {
+    .photo{
+        display:none;
+    }
+}

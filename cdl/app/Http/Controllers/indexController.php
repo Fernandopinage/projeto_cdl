@@ -13,7 +13,7 @@ class indexController extends Controller
      */
     public function index()
     {
-        return view('login');
+        return view('militar');
     }
 
     
