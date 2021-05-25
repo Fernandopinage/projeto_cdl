@@ -3,7 +3,8 @@
        
         @section('conteudo')
 
-        <form class="form-signin" method="POST" action="">
+        <form class="form-signin" method="get" action="login/militar">
+            {{ csrf_field() }}
             <div class="text-center" id="text-pesquisar">
                 <p class="h1 text-center">Faça sua busca</p>
             </div>
