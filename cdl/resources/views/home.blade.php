@@ -1,6 +1,4 @@
 @extends('layout.home')
-    
-       
         @section('conteudo')
 
         <form class="form-signin" method="get" action="login/militar">
