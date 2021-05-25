@@ -1,4 +1,4 @@
-@extends('layout.app')
+@extends('layout.login')
 
 @section('login')
     
@@ -8,10 +8,10 @@
         <hr>
     </div>
     <div class="mb-3">
-    <input type="text" class="form-control form-control-lg" name="login" placeholder="E-mail" required="" autofocus="" />
+    <input type="text" class="form-control form-control" name="login" placeholder="E-mail" required="" autofocus="" />
     </div>
     <div class="mb-3">
-    <input type="password" class="form-control form-control-lg" name="password" placeholder="Senha" required="" />
+    <input type="password" class="form-control form-control" name="password" placeholder="Senha" required="" />
     </div>
     <div class="text-left">
         <a class="nav-link" href="#">Esqueci minha senha</a>

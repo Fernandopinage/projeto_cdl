@@ -5,21 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <link href="/css/login_oms.css" rel="stylesheet">
-    <title>OMS</title>
+    <link href="/css/busca_exmilitar.css" rel="stylesheet">
+    <title>Busca Militar</title>
 </head>
 <body>
     <nav class="navbar navbar-dark bg-dark">
         <div class="container">
           <a class="navbar-brand" href="#">
-            <img src="/img/cdl-logo.png" alt="" width="30" height="24">
+            <img src="/img/cdl-logo.png" alt="" >
           </a>
         </div>
       </nav>
 
     <div class="container">
 
-        @yield('login')
+        @yield('busca')
 
     </div>
     
