@@ -23,6 +23,7 @@ body{
     padding: 35px 35px 45px 35px;
     margin:  auto;
     margin-top: 10px;
+    margin-left: 10px;
     background-color: #fff;
     box-shadow: 3px 3px 4px 1px rgba(0, 0, 0, 0.342);
     border-radius: 17px;
@@ -51,3 +52,22 @@ body{
   hr{
     color: #523617;
   }
+
+  .photo{
+    background: url('/img/busca-militar.png'); 
+    position:relative;
+    margin-top: -420px;
+    
+    background-repeat: no-repeat, repeat-y;
+    float: right;
+    width:500px;
+    height: 600px;
+    background-color: #fff;
+    background-size: cover;
+    border: 0px solid rgb(22, 22, 22);
+}
+  @media only screen and (max-width: 1200px) {
+    .photo{
+        display:none;
+    }
+}

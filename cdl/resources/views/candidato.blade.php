@@ -13,8 +13,13 @@
     <div class="mb-3">
     <input type="password" class="form-control form-control" name="password" placeholder="Senha" required="" />
     </div>
-    <div class="text-left">
+    <div class="row g-3">
+        <div class="col">
+        <a class="nav-link" href="#">Criar uma conta</a>
+        </div>
+        <div class="col">
         <a class="nav-link" href="#">Esqueci minha senha</a>
+        </div>
     </div>
 
     <div class="d-grid gap-2">

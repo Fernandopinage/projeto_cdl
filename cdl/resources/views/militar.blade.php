@@ -3,7 +3,7 @@
 @section('login')
     
 <form class="form-signin" method="POST">
-    <div class="text-center" id="logo">
+    <div class="text-center">
         <h2 class="form-signin-heading">OM's</h2>
         <hr>
     </div>
@@ -22,5 +22,8 @@
     </div>
 
 </form>
+<div class="photo">
+
+</div>
 
 @endsection

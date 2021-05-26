@@ -21,4 +21,8 @@
             <input type="submit" class="btn btn-lg" name="loginentrar" value="Buscar">
             </div>
         </form>  
+
+        <div class="photo">
+
+        </div>
         @endsection
