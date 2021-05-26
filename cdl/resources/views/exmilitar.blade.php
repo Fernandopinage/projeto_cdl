@@ -4,7 +4,7 @@
         @section('busca')
 
         <form class="form-signin" method="POST" action="">
-            <div class="text-center" id="logo">
+            <div class="text-center">
                 <h2 class="form-signin-heading">Busca por Ex-Militares</h2>
                 <hr>
             </div>

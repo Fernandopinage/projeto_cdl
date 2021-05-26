@@ -6,8 +6,13 @@ body{
     background-size: cover;
     
 }
+#menu{
+  padding: 30px;
+ 
+}
 
-img{
+
+#logo{
 
   width: 150px;
   height: 60px;
@@ -17,7 +22,7 @@ img{
     max-width: 480px;
     padding: 35px 35px 45px 35px;
     margin:  auto;
-    margin-top: 130px;
+    margin-top: 10px;
     background-color: #fff;
     box-shadow: 3px 3px 4px 1px rgba(0, 0, 0, 0.342);
     border-radius: 17px;
