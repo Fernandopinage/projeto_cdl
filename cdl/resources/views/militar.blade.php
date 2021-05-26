@@ -23,7 +23,7 @@
 
 </form>
 <div class="photo">
-
+<img src="/img/busca-militar.png">
 </div>
 
 @endsection

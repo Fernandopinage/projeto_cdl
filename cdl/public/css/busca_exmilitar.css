@@ -54,15 +54,15 @@ body{
   }
 
   .photo{
-    background: url('/img/busca-militar.png'); 
+   /* background: url('/img/busca-militar.png'); */
     position:relative;
     margin-top: -420px;
     
     background-repeat: no-repeat, repeat-y;
     float: right;
-    width:500px;
-    height: 600px;
-    background-color: #fff;
+   /* width:500px;
+    height: 600px;*/
+    /*background-color: #fff;*/
     background-size: cover;
     border: 0px solid rgb(22, 22, 22);
 }
