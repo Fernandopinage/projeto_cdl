@@ -15,10 +15,10 @@
     </div>
     <div class="row g-3">
         <div class="col">
-        <a class="nav-link" href="#">Criar uma conta</a>
+            <a class="nav-link" href="#">Esqueci minha senha</a>
         </div>
         <div class="col">
-        <a class="nav-link" href="#">Esqueci minha senha</a>
+            <a class="nav-link" href="#">Criar uma conta</a>
         </div>
     </div>
 
@@ -29,6 +29,6 @@
 </form>
 
 <div class="photo">
-
+    <img src="/img/man2-candidato1.png">
 </div>
 @endsection

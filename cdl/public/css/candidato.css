@@ -56,10 +56,9 @@
   }
 
   .photo{
-    background: url('/img/man2-candidato1.png'); 
+   /* background: url('/img/man2-candidato1.png'); */
     position:relative;
     margin-top: -370px;
-    
     float: right;
     width:500px;
     height: 500px;

@@ -24,6 +24,11 @@ body{
   border-radius: 17px;
 
 }
+#menu{
+
+  padding: 30px;
+  background-color: #525961cb;
+}
 
 
   .btn{

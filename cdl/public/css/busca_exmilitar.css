@@ -22,7 +22,7 @@ body{
     max-width: 480px;
     padding: 35px 35px 45px 35px;
     margin:  auto;
-    margin-top: 10px;
+    margin-top: 50px;
     margin-left: 10px;
     background-color: #fff;
     box-shadow: 3px 3px 4px 1px rgba(0, 0, 0, 0.342);
@@ -51,6 +51,12 @@ body{
   }
   hr{
     color: #523617;
+  }
+
+  #menu{
+
+    padding: 30px;
+    background-color: #525961cb;
   }
 
   .photo{
