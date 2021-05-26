@@ -1,3 +1,6 @@
+body{
+  background-color: #092c6e;
+}
 #logo{
     
     width: 150px;
@@ -7,7 +10,7 @@
   
     #menu{
       padding: 30px;
-      background-color: #FDB62A;
+      background-color: #024B97;
   }
   
     .form-signin {
@@ -29,14 +32,10 @@
     .btn:hover{
   
       color: #f0ede9;
-      background-color: #092c6e;
-      border-color: #092c6e;
+      background-color: #FDB62A;
+      border-color: #FDB62A;
     }
   
-    a:link{
-      
-      
-    }
     a:hover {
       text-decoration: none;
       color: black;
@@ -62,7 +61,7 @@
       float: right;
       width:500px;
       height: 500px;
-      background-color: #fff;
+     /* background-color: #fff;*/
       background-size: cover;
       border: 0px solid rgb(22, 22, 22);
   }
