@@ -16,6 +16,18 @@ class CandidatoController extends Controller
         return view('candidato');
     }
 
+    
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+
+    public function selectCandidato(Request $Request){
+
+        return view('busca_candidato');
+    }
     /**
      * Show the form for creating a new resource.
      *
