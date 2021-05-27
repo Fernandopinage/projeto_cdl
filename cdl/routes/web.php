@@ -29,5 +29,8 @@ Route::get('/',[homeController::class, 'index']); // home do projeto
 Route::get('login/militar',[indexController::class, 'index']); // chamando tela de index login
 Route::get('busca/militar', [exmilitarController::class, 'index']); // chamando tela busca 
 Route::get('login/candidato',[CandidatoController::class, 'index']); // chamando tela de candidatos
+Route::get('busca/candidato', function(){
+    return view('busca_candidato');
+});
 Route::get('login/acesso',[acessoController::class,'index']);   // tela de acesso area administrativa
 Route::get('login/utv',[utvController::class,'index']);  // tela de acesso a utv
