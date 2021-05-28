@@ -7,7 +7,7 @@
     <div class="form-signin">
         <div class="text-end">
             <label class="switch">
-                <input type="checkbox">
+                <input type="checkbox" checked>
                 <span class="slider round"></span>
             </label>
         </div>
@@ -97,7 +97,7 @@
     <div class="form-signin">
         <div class="text-end">
             <label class="switch">
-                <input type="checkbox">
+                <input type="checkbox" checked>
                 <span class="slider round"></span>
             </label>
         </div>
@@ -138,7 +138,7 @@
     <div class="form-signin">
         <div class="text-end">
             <label class="switch">
-                <input type="checkbox">
+                <input type="checkbox" checked>
                 <span class="slider round"></span>
             </label>
         </div>
