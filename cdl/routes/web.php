@@ -35,5 +35,12 @@ Route::get('add/candidato',function(){
     return view('add_candidato');
 }); // creat candidato
 
+Route::get('add/empresa',function(){
+
+    return view('add_empresa');
+});
+
+
 Route::get('login/acesso',[acessoController::class,'index']);   // tela de acesso area administrativa
 Route::get('login/utv',[utvController::class,'index']);  // tela de acesso a utv
+
