@@ -92,27 +92,27 @@
         <div class="row g-3">
             <div class="col-md-2">
                 <label class="form-check-label" for="flexCheckIndeterminate">CEP</label>
-                <input type="text" class="form-control" placeholder="">
+                <input type="text" class="form-control" id="cep" placeholder="">
             </div>
             <div class="col-md-1">
                 <label class="form-check-label" for="flexCheckIndeterminate">UF</label>
-                <input type="text" class="form-control" placeholder="">
+                <input type="text" class="form-control" id="uf" placeholder="">
             </div>
             <div class="col-md-2">
                 <label class="form-check-label" for="flexCheckIndeterminate">Cidade</label>
-                <input type="text" class="form-control" placeholder="">
+                <input type="text" class="form-control" id="cidade" placeholder="">
             </div>
             <div class="col-md-7">
                 <label class="form-check-label" for="flexCheckIndeterminate">Bairro</label>
-                <input type="text" class="form-control" placeholder="">
+                <input type="text" class="form-control" id="bairro" placeholder="">
             </div>
             <div class="col-md-2">
                 <label class="form-check-label" for="flexCheckIndeterminate">Nº</label>
-                <input type="text" class="form-control" placeholder="">
+                <input type="text" class="form-control" id="numero" placeholder="">
             </div>
             <div class="col-md-10">
                 <label class="form-check-label" for="flexCheckIndeterminate">Complemento</label>
-                <input type="text" class="form-control" placeholder="">
+                <input type="text" class="form-control" id="complemento" placeholder="">
             </div>
         </div>
        
@@ -145,6 +145,20 @@
             </div>
             <div class="col-md-6">
             </div>
+        </div>
+
+    </div>
+
+    <div class="form-signin">
+    
+        <div class="text-center" >
+            <h2 class="form-signin-heading">Termo</h2>
+            <hr>
+        </div>
+            
+        <div class="row g-3">
+            <div class="col-md-6">
+            </div>
             <div class="col-md-12" style="padding-top: 50px ">
                 <div class="text-center">
                     <label class="form-check-label" for="flexCheckIndeterminate">Termo de política</label>
@@ -154,10 +168,9 @@
                 </div>
             </div>
         </div>
-
+       
+    
     </div>
 
 </form>
-
-
 @endsection
