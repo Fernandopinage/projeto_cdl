@@ -22,7 +22,19 @@
     
    
 }
+input[placeholder]{
 
+    text-align: center;
+}
+
+select{
+
+border-radius: 5px 0px 0px 5px;
+
+}
+option{
+    border-color: #fff;
+}
 .form-signin{
 
     
