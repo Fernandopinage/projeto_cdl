@@ -6,8 +6,12 @@
 
     <div class="form-signin">
         <div class="text-end">
-            <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
         </div>
+        
         <div class="text" >          
             <h2 class="form-signin-heading">Dados Pessoais</h2>
             <hr>
@@ -91,6 +95,12 @@
         </div>   
     </div>
     <div class="form-signin">
+        <div class="text-end">
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </div>
         <div class="row g-3">
         <div class="text" >
             <h2 class="form-signin-heading">Informações de contato</h2>
@@ -126,7 +136,12 @@
 
 
     <div class="form-signin">
-
+        <div class="text-end">
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </div>
     
         <div class="text" >
             <h2 class="form-signin-heading">Endereço</h2>
