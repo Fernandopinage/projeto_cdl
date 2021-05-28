@@ -112,7 +112,7 @@
             </div>
             <div class="col-md-10">
                 <label class="form-check-label" for="flexCheckIndeterminate">Complemento</label>
-                <input type="text" class="form-control" id="complemento" placeholder="">
+                <input type="text" class="form-control" id="rua" placeholder="">
             </div>
         </div>
        

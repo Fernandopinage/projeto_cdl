@@ -31,6 +31,11 @@ Route::get('busca/militar', [exmilitarController::class, 'index']); // chamando 
 
 Route::get('login/candidato',[CandidatoController::class, 'index']); // chamando tela de candidatos
 Route::get('busca/candidato', [CandidatoController::class, 'selectCandidato']); // chamando tela  busca candidato 
+
+Route::get('login/empresa',function(){
+
+    return view('empresa');
+});
 Route::get('add/candidato',function(){
     return view('add_candidato');
 }); // creat candidato
