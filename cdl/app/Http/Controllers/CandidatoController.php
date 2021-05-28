@@ -16,6 +16,10 @@ class CandidatoController extends Controller
         return view('candidato');
     }
 
+    public function formularioCandidato(){
+        return view('add_candidato');
+    }
+
     
     /**
      * Store a newly created resource in storage.

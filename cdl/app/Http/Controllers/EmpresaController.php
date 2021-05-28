@@ -13,7 +13,11 @@ class EmpresaController extends Controller
      */
     public function index()
     {
-        //
+        return view('empresa');
+    }
+    public function formularioEmpresa(){
+
+        return view('add_empresa');
     }
 
     /**
@@ -45,7 +49,7 @@ class EmpresaController extends Controller
      */
     public function show($id)
     {
-        //
+        
     }
 
     /**

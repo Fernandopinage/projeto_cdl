@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\acessoController;
 use App\Http\Controllers\CandidatoController;
+use App\Http\Controllers\EmpresaController;
 use App\Http\Controllers\exmilitarController;
 use App\Http\Controllers\homeController;
 use Illuminate\Support\Facades\Route;
@@ -29,21 +30,14 @@ Route::get('/',[homeController::class, 'index']); // home do projeto
 Route::get('login/militar',[indexController::class, 'index']); // chamando tela de index login
 Route::get('busca/militar', [exmilitarController::class, 'index']); // chamando tela busca 
 
+
 Route::get('login/candidato',[CandidatoController::class, 'index']); // chamando tela de candidatos
 Route::get('busca/candidato', [CandidatoController::class, 'selectCandidato']); // chamando tela  busca candidato 
+Route::get('add/candidato',[CandidatoController::class,'formularioCandidato']); // chamando tela de formulario do candidato
 
-Route::get('login/empresa',function(){
+Route::get('login/empresa',[EmpresaController::class,'index']); // chamando tela de login da empresa
 
-    return view('empresa');
-});
-Route::get('add/candidato',function(){
-    return view('add_candidato');
-}); // creat candidato
-
-Route::get('add/empresa',function(){
-
-    return view('add_empresa');
-});
+Route::get('add/empresa',[EmpresaController::class,'formularioEmpresa']);
 
 
 Route::get('login/acesso',[acessoController::class,'index']);   // tela de acesso area administrativa

@@ -4,7 +4,7 @@
     height: 60px;
     
   }
-  
+
     #menu{
       padding: 30px;
       background-color: #284D92;
@@ -16,25 +16,25 @@
       margin:  auto;
       margin-top: 50px;
       margin-left: 10px;
-      background-color: #ffb700de;
-      box-shadow: 3px 3px 4px 1px rgba(0, 0, 0, 0.342);
+      background-color: #fff;
+      box-shadow: 3px 3px 4px 2px rgba(0, 0, 0, 0.342);
       border-radius: 17px;
     
     }
   
     .btn{
       color: #fff;
-      background-color: #007D40;
+      background-color: #242966;
     }
     .btn:hover{
   
       color: #f0ede9;
-      background-color: #007D40;
+      background-color: #242966;
       border-color: #0a0a0a;
     }
 
    #link1{
-        color: #fff;
+        color: #242966;
     }
   
     a:link{
@@ -46,17 +46,16 @@
       color: black;
     }
     hr{
-      color: #fff;
+      color: #242966;
     }
     h2{
-      color: #fff;
+      color: #242966;
     }
     .nav-link{
-        color: #fff;
+        color: #242966;
     }
     .nav-link:hover{
-  
-      color: #fff;
+      color: #242966;
     }
   
     .photo{
