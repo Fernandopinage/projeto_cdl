@@ -2,15 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Empresa;
 use Illuminate\Http\Request;
+
 
 class EmpresaController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+    
     public function index()
     {
         return view('empresa');
@@ -20,67 +18,59 @@ class EmpresaController extends Controller
         return view('add_empresa');
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+   
     public function create()
     {
         //
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
+   
     public function store(Request $request)
     {
-        //
+        $empresa = new Empresa();
+        $empresa->emp_logo = $request->logo;
+        $empresa->emp_fantasia = $request->fantasia;
+        $empresa->emp_email = $request->email;
+        $empresa->emp_razao = $request->razao;
+        $empresa->emp_cnpj = $request->cnpj;
+        $empresa->emp_atividade = $request->ramo;
+        $empresa->emp_telefone = $request->telefone;
+        $empresa->emp_celular = $request->telefone2;
+        $empresa->emp_cep = $request->cep;
+        $empresa->emp_logrador = $request->rua;
+        $empresa->emp_numero = $request->numero;
+        $empresa->emp_bairro = $request->bairro;
+        $empresa->emp_cidade = $request->cidade;
+        $empresa->emp_uf = $request->uf;
+        $empresa->emp_nome_contato = $request->tecnico;
+        $empresa->emp_email_contato = $request->emailtecnico;
+        $empresa->emp_chack_assoc = $request->associado;
+        $empresa->emp_cod_assoc = $request->cod;
+        $empresa->emp_senha = $request->senha;
+        $empresa->emp_termo = $request->termo;
+        $empresa->emp_status = $request->status;
+        $empresa->save();
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
+  
     public function show($id)
     {
         
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
+    
     public function edit($id)
     {
         //
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
+    
     public function update(Request $request, $id)
     {
         //
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
+   
     public function destroy($id)
     {
         //

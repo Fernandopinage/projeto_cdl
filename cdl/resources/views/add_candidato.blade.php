@@ -2,8 +2,9 @@
 
 @section('cadastro')
 
-<form method="POST" >
+<form action="empresa"  method="POST" >
 
+    {{ csrf }}
     <div class="form-signin">
         <div class="text-end">
             <label class="switch">
@@ -23,38 +24,38 @@
 
                 <div class="col-md-4">
                     <label class="form-check-label" for="flexCheckIndeterminate">Primeiro nome </label>
-                    <input type="text" class="form-control" placeholder="">
+                    <input type="text" class="form-control" name="nome" placeholder="">
                 </div>
 
                 <div class="col-md-4">
                     <label class="form-check-label" for="flexCheckIndeterminate">Sobre Nome</label>
-                    <input type="text" class="form-control" placeholder="">
+                    <input type="text" class="form-control" name="sobrenome" placeholder="">
                 </div>
 
                 <div class="col-md-4">
                     <label class="form-check-label" for="flexCheckIndeterminate">Selecione Sua foto</label>
-                    <input class="form-control" type="file" id="formFile">
+                    <input class="form-control" type="file" name="foto" id="formFile">
                 </div>  
 
                 <div class="col-md-3">
                     <label class="form-check-label" for="flexCheckIndeterminate">CPF</label>
-                    <input type="text" class="form-control" placeholder="">
+                    <input type="text" class="form-control" name="cpf" placeholder="">
                 </div>
                 <div class="col-md-3">
                     <label class="form-check-label" for="flexCheckIndeterminate">RG</label>
-                    <input type="text" class="form-control" placeholder="">
+                    <input type="text" class="form-control" name="rg" placeholder="">
                 </div>
                 <div class="col-md-3">
                     <label class="form-check-label" for="flexCheckIndeterminate">Data Nascimento </label>
-                    <input type="date" class="form-control" placeholder="">
+                    <input type="date" class="form-control" name="nascimento" placeholder="">
                 </div>
                 <div class="col-md-3">
                     <label class="form-check-label" for="flexCheckIndeterminate">Local de Nascimento </label>
-                    <input type="text" class="form-control" placeholder="">
+                    <input type="text" class="form-control" name="localnascimento" placeholder="">
                 </div>
                 <div class="col-md-2">
                     <label class="form-check-label" for="flexCheckIndeterminate">Cor</label>
-                    <select id="inputState" class="form-select">
+                    <select id="inputState" name="cor" class="form-select">
                         <option selected></option>
                         <option>Branca</option>
                         <option>Preta</option>
@@ -179,6 +180,7 @@
        
     
     </div>
+    
 </form>
 
 

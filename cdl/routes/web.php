@@ -36,8 +36,8 @@ Route::get('busca/candidato', [CandidatoController::class, 'selectCandidato']); 
 Route::get('add/candidato',[CandidatoController::class,'formularioCandidato']); // chamando tela de formulario do candidato
 
 Route::get('login/empresa',[EmpresaController::class,'index']); // chamando tela de login da empresa
-
 Route::get('add/empresa',[EmpresaController::class,'formularioEmpresa']);
+Route::post('/empresa',[EmpresaController::class, 'store']);
 
 
 Route::get('login/acesso',[acessoController::class,'index']);   // tela de acesso area administrativa
