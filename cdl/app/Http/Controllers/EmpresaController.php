@@ -20,22 +20,22 @@ class EmpresaController extends Controller
       
 
         $request->validate([
-            'email' => 'required',
-            'password' => 'required',
+            'email' => 'required',                  //request de email do formulario 
+            'password' => 'required',               //request de senha do formulario 
         ]);
    
-        $empresa =  Empresa::where('emp_email',$request->email)->first();
+        $empresa =  Empresa::where('emp_email',$request->email)->first();       // selecionando o usuario 
         
-            if(!empty($empresa)){
+            if(!empty($empresa)){                                               //  caso tenha valor dentro da variavel empresa
 
-                if (Hash::check($request->password, $empresa->emp_senha)) {
-                    echo "ok";
+                if (Hash::check($request->password, $empresa->emp_senha)) {     //  decodificando senha hash 
+                    echo "ok";                                                  // redirecinanmento se estiver tudo certo
                 }else{
-                    return redirect()->intended('/login/empresa');
+                    return redirect()->intended('/login/empresa');              // redirecinamento caso senha nao seja valida
                 }
             }else{
 
-                return redirect()->intended('/login/empresa');
+                return redirect()->intended('/login/empresa');                  // caso não existe o email
             }
            
     }
