@@ -17,7 +17,7 @@
     </div>
     <div class="row g-3">
         <div class="col">
-            <a class="nav-link" id="link1" href="#">Esqueci minha senha</a>
+            <a class="nav-link" id="link1" href="/redefinir/empresa">Esqueci minha senha</a>
         </div>
         <div class="col">
             <a class="nav-link" id="link1" href="/add/empresa">Criar uma conta</a>

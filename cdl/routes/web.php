@@ -39,7 +39,7 @@ Route::get('login/empresa',[EmpresaController::class,'index']); // chamando tela
 Route::post('/validar/empresa',[EmpresaController::class,'validarLogin']);
 Route::get('add/empresa',[EmpresaController::class,'formularioEmpresa']); // tela de formulario cadastro de empresa
 Route::post('/insert/empresa',[EmpresaController::class, 'store']); // submetendo formulario de empresa
-
+Route::get('redefinir/empresa',[EmpresaController::class,'redefinirSenha']); // chamando tela de redefinir senha
 
 Route::get('login/acesso',[acessoController::class,'index']);   // tela de acesso area administrativa
 Route::get('login/utv',[utvController::class,'index']);  // tela de acesso a utv

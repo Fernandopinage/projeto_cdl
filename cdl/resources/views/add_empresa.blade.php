@@ -153,7 +153,7 @@
 
     <div class="form-signin">
     
-        <div class="text-center" >
+        <div class="" >
             <h2 class="form-signin-heading">Termo</h2>
             <hr>
         </div>

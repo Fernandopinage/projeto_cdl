@@ -113,4 +113,9 @@ class EmpresaController extends Controller
     {
         //
     }
+
+    public function redefinirSenha(){
+
+        return view('redefinir_empresa');
+    }
 }
