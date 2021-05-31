@@ -6,6 +6,7 @@ use App\Models\Empresa;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Redirect;
 use phpDocumentor\Reflection\Types\Void_;
 
 class EmpresaController extends Controller
@@ -30,8 +31,11 @@ class EmpresaController extends Controller
                 if (Hash::check($request->password, $empresa->emp_senha)) {
                     echo "ok";
                 }else{
-                    echo "fudeu";
+                    return redirect()->intended('/login/empresa');
                 }
+            }else{
+
+                return redirect()->intended('/login/empresa');
             }
            
     }
