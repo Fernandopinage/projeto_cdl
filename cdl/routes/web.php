@@ -35,16 +35,14 @@ Route::get('login/candidato',[CandidatoController::class, 'index']); // chamando
 Route::get('busca/candidato', [CandidatoController::class, 'selectCandidato']); // chamando tela  busca candidato 
 Route::get('add/candidato',[CandidatoController::class,'formularioCandidato']); // chamando tela de formulario do candidato
 
+
 Route::get('login/empresa',[EmpresaController::class,'index']); // chamando tela de login da empresa
 Route::post('/validar/empresa',[EmpresaController::class,'validarLogin']);
 Route::get('add/empresa',[EmpresaController::class,'formularioEmpresa']); // tela de formulario cadastro de empresa
 Route::post('/insert/empresa',[EmpresaController::class, 'store']); // submetendo formulario de empresa
 Route::get('redefinir/empresa',[EmpresaController::class,'redefinirSenha']); // chamando tela de redefinir senha
 Route::get('filtra/candidato/empresa',[EmpresaController::class,'filtroEmpresa']); // chamando tela de filtro candidato
-Route::get('anucio/empresa',function(){
-
-    return view('anucie_empresa');
-});
+Route::get('anucio/empresa',[EmpresaController::class,'anuciarVagas']); // chamndo tela de anucio
 
 
 Route::get('login/acesso',[acessoController::class,'index']);   // tela de acesso area administrativa

@@ -155,17 +155,17 @@
                     <input type="text" class="form-control form-control-sm" name="rua" id="rua" placeholder="">
                 </div>
 
-                <div class="col-md-1">
+                <div class="col-md-2">
                     <div class="form-check form-check-inline">
-                        <label class="form-check-label" for="inlineCheckbox1">Vaga </label>
-                        <input class="form-control-plaintext" type="checkbox" id="inlineCheckbox1" value="option1">
-                      </div>
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                        <label class="form-check-label" for="inlineCheckbox1">Vaga remota</label>
+                    </div>
                 </div>
                 <div class="col-md-2">
                     <div class="form-check form-check-inline">
-                        <label class="form-check-label" for="inlineCheckbox1">Exibir Empresa </label>
-                        <input class="form-control-plaintext" type="checkbox" id="inlineCheckbox1" value="option1">
-                      </div>
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                        <label class="form-check-label" for="inlineCheckbox2">Exibir Empresa</label>
+                    </div>
                 </div>
             </div>  
 
