@@ -4,7 +4,7 @@
 
 <form action="empresa"  method="POST" >
 
-    {{ csrf }}
+    @csrf
     <div class="form-signin">
         <div class="text-end">
             <label class="switch">
