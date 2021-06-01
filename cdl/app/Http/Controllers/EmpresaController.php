@@ -118,4 +118,9 @@ class EmpresaController extends Controller
 
         return view('redefinir_empresa');
     }
+
+    public function filtroEmpresa(){
+
+        return view('candidato_empresa');
+    }
 }

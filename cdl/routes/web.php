@@ -40,11 +40,11 @@ Route::post('/validar/empresa',[EmpresaController::class,'validarLogin']);
 Route::get('add/empresa',[EmpresaController::class,'formularioEmpresa']); // tela de formulario cadastro de empresa
 Route::post('/insert/empresa',[EmpresaController::class, 'store']); // submetendo formulario de empresa
 Route::get('redefinir/empresa',[EmpresaController::class,'redefinirSenha']); // chamando tela de redefinir senha
-Route::get('filtra/candidato/empresa',function(){
+Route::get('filtra/candidato/empresa',[EmpresaController::class,'filtroEmpresa']); // chamando tela de filtro candidato
+Route::get('anucio/empresa',function(){
 
-    return view('candidato_empresa');
+    return view('anucie_empresa');
 });
-
 
 
 Route::get('login/acesso',[acessoController::class,'index']);   // tela de acesso area administrativa
