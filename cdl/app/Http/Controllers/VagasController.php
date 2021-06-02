@@ -96,7 +96,7 @@ class VagasController extends Controller
         $anucio->vag_pcd_descricao = $request->descricao_pcd;
         $anucio->save();
 
-        return redirect('/anucio/empresa'); // redirecionar para tela de anuncio
+        return redirect('/anucio/empresa')->with('success'); // redirecionar para tela de anuncio
         
     }
 }
