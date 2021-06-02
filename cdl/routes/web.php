@@ -8,6 +8,7 @@ use App\Http\Controllers\homeController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\indexController; // necessario instancia 
 use App\Http\Controllers\utvController;
+use App\Http\Controllers\VagasController;
 
 /*
 |--------------------------------------------------------------------------
@@ -37,13 +38,14 @@ Route::get('add/candidato',[CandidatoController::class,'formularioCandidato']); 
 
 
 Route::get('login/empresa',[EmpresaController::class,'index']); // chamando tela de login da empresa
-Route::post('/validar/empresa',[EmpresaController::class,'validarLogin']);
+Route::post('/validar/empresa',[EmpresaController::class,'validarLogin']); // tela de login da empresa 
 Route::get('add/empresa',[EmpresaController::class,'formularioEmpresa']); // tela de formulario cadastro de empresa
-Route::post('/insert/empresa',[EmpresaController::class, 'store']); // submetendo formulario de empresa
+Route::post('/insert/empresa',[EmpresaController::class, 'store']); // submetendo formulario de empresa cadastro
 Route::get('redefinir/empresa',[EmpresaController::class,'redefinirSenha']); // chamando tela de redefinir senha
 Route::get('filtra/candidato/empresa',[EmpresaController::class,'filtroEmpresa']); // chamando tela de filtro candidato
 Route::get('anucio/empresa',[EmpresaController::class,'anuciarVagas']); // chamndo tela de anucio
-
+Route::post('/filtra/candidato/empresa',[EmpresaController::class,'filtrarCandidato']); // filtrando candidato 
+Route::post('/anucie/vaga/empresa',[VagasController::class,'anucieVagas']);
 
 Route::get('login/acesso',[acessoController::class,'index']);   // tela de acesso area administrativa
 Route::get('login/utv',[utvController::class,'index']);  // tela de acesso a utv

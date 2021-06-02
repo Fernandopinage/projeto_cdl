@@ -3,6 +3,7 @@
 @section('busca')
 
 <form class="form-signin" method="POST">
+    @csrf
     <div class="text-center" >
         <h2 class="form-signin-heading">Buscar por Ex-alunos</h2>
         <hr>

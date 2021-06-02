@@ -109,23 +109,28 @@ class EmpresaController extends Controller
     }
 
    
-    public function destroy($id)
+    public function destroy($id)                                // "deletar" registro ou ocultar
     {
         //
     }
 
-    public function anuciarVagas(){
+    public function anuciarVagas(){                             //  chamndo tela de anucio
 
         return view('anucie_empresa');
     }
 
-    public function redefinirSenha(){
+    public function redefinirSenha(){                           //  redefinir senha da empresa
 
         return view('redefinir_empresa');
     }
 
-    public function filtroEmpresa(){
+    public function filtroEmpresa(){                            // chamando tela de filtro candidato
 
         return view('candidato_empresa');
+    }
+
+    public function filtrarCandidato(Request $request){         //  filtrando candidato na base de dados
+
+        
     }
 }
