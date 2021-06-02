@@ -60,7 +60,7 @@ class EmpresaController extends Controller
     {
 
                 // validando campos obrigatorios caso um dos campos esteja em banco nao inserir no banco de dados 
-                $this->validate($request,[
+               /* $this->validate($request,[
 
                     'razao'=>'required',
                     'cnpj'=>'required',
@@ -72,7 +72,7 @@ class EmpresaController extends Controller
                     'cidade'=>'required',
                     'bairro'=>'required',
                     'termo'=>'required'
-                ]);
+                ]);*/
 
         if($request->senha === $request->confirmar){
 
@@ -100,7 +100,8 @@ class EmpresaController extends Controller
             $empresa->emp_status = $request->status;
             $empresa->save();
         
-            return View('add_empresa');
+            //return View('add_empresa')->with('success','teste');
+            return redirect('add/empresa')->with('success','');
             
         }
     }

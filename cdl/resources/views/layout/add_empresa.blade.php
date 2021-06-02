@@ -172,9 +172,14 @@
     });
 </script>
 
+
+@if (session('success'))
 <script>
-    Swal.fire({  position: 'center',  icon: 'success',  title: 'Cadastro realizando com sucesso',  showConfirmButton: false,  timer: 1500  })
+  Swal.fire({  position: 'center',  icon: 'success',  title: 'Cadastro realizando com sucesso',  showConfirmButton: false,  timer: 1500  })
 </script>
+@endif
+
+
 
 
 <script src="/js/checkbox.js"></script>
