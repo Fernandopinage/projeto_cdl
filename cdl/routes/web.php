@@ -10,6 +10,7 @@ use App\Http\Controllers\indexController; // necessario instancia
 use App\Http\Controllers\utvController;
 use App\Http\Controllers\VagasController;
 
+use RealRashid\SweetAlert\Facades\Alert; // sweetAlert
 /*
 |--------------------------------------------------------------------------
 | Web Routes
