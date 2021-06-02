@@ -14,7 +14,7 @@
             </label>
         </div>
         
-        <div class="text" >          
+        <div class="text">          
             <h2 class="form-signin-heading"> DADOS DA EMPRESA </h2>
             <hr>
         </div>
@@ -29,7 +29,7 @@
                 </div>
 
                 <div class="col-md-4">
-                    <label class="form-check-label" for="flexCheckIndeterminate">Razão Social</label>
+                    <label class="form-check-label" for="flexCheckIndeterminate">Razão Social <span><strong>*</strong></span></label>
                     <input type="text" name="razao" class="form-control form-control-sm" placeholder="">
                 </div>
 
@@ -39,7 +39,7 @@
                 </div>  
 
                 <div class="col-md-3">
-                    <label class="form-check-label" for="flexCheckIndeterminate">CNPJ</label>
+                    <label class="form-check-label" for="flexCheckIndeterminate">CNPJ <span><strong>*</strong></span></label>
                     <input type="text" class="form-control form-control-sm" name="cnpj" placeholder="">
                 </div>
                 <div class="col-md-5">
@@ -47,11 +47,11 @@
                     <input type="text" class="form-control form-control-sm" name="email" placeholder="">
                 </div>
                 <div class="col-md-2">
-                    <label class="form-check-label" for="flexCheckIndeterminate">Senha </label>
+                    <label class="form-check-label" for="flexCheckIndeterminate">Senha <span><strong>*</strong></span></label>
                     <input type="password" class="form-control form-control-sm" name="senha" placeholder="">
                 </div>
                 <div class="col-md-2">
-                    <label class="form-check-label" for="flexCheckIndeterminate">Confirmar Senha </label>
+                    <label class="form-check-label" for="flexCheckIndeterminate">Confirmar Senha <span><strong>*</strong></span></label>
                     <input type="password" class="form-control form-control-sm" name="confirmar" placeholder="">
                 </div>
                 <div class="col-md-6">
@@ -64,7 +64,7 @@
                 </div>
 
                 <div class="col-md-4">
-                    <label class="form-check-label" for="flexCheckIndeterminate">Ramo de Atividade</label>
+                    <label class="form-check-label" for="flexCheckIndeterminate">Ramo de Atividade <span><strong>*</strong></span></label>
                     <input type="text" class="form-control form-control-sm" name="ramo" placeholder="">
                 </div>
                 <div class="col-md-4">
@@ -77,6 +77,8 @@
                 </div>
             </div>  
         </div> 
+        <br><br>
+        <span>  Campos Obrigatórios <strong>*</strong></span>
     </div>
     <div class="form-signin">
         <div class="text-end">
@@ -93,19 +95,19 @@
             
         <div class="row g-3">
             <div class="col-md-2">
-                <label class="form-check-label" for="flexCheckIndeterminate">CEP</label>
+                <label class="form-check-label" for="flexCheckIndeterminate">CEP <span><strong>*</strong></span></label>
                 <input type="text" class="form-control form-control-sm" name="cep" id="cep" placeholder="">
             </div>
             <div class="col-md-1">
-                <label class="form-check-label" for="flexCheckIndeterminate">UF</label>
+                <label class="form-check-label" for="flexCheckIndeterminate">UF <span><strong>*</strong></span></label>
                 <input type="text" class="form-control form-control-sm" name="uf" id="uf" placeholder="">
             </div>
             <div class="col-md-2">
-                <label class="form-check-label" for="flexCheckIndeterminate">Cidade</label>
+                <label class="form-check-label" for="flexCheckIndeterminate">Cidade <span><strong>*</strong></span></label>
                 <input type="text" class="form-control form-control-sm" name="cidade" id="cidade" placeholder="">
             </div>
             <div class="col-md-7">
-                <label class="form-check-label" for="flexCheckIndeterminate">Bairro</label>
+                <label class="form-check-label" for="flexCheckIndeterminate">Bairro <span><strong>*</strong></span></label>
                 <input type="text" class="form-control form-control-sm" name="bairro" id="bairro" placeholder="">
             </div>
             <div class="col-md-2">
@@ -118,7 +120,8 @@
             </div>
         </div>
        
-    
+        <br><br>
+        <span>  Campos Obrigatórios <strong>*</strong></span>
     </div>
 
 
@@ -148,7 +151,8 @@
             <div class="col-md-6">
             </div>
         </div>
-
+        <br><br>
+        <span>  Campos Obrigatórios <strong>*</strong></span>
     </div>
 
     <div class="form-signin">
@@ -163,7 +167,7 @@
             </div>
             <div class="col-md-12" style="padding-top: 50px ">
                 <div class="text-center">
-                    <label class="form-check-label" for="flexCheckIndeterminate">Termo de política</label>
+                    <label class="form-check-label" for="flexCheckIndeterminate">Termo de política <span><strong>*</strong></span></label>
                     <div class="form-check">
                         <input class="form-check-inpu" type="checkbox" value="" name="termo" id="flexCheckDefault">
                     </div>
@@ -174,6 +178,7 @@
         <div class="text-end">
             <input type="submit" class="btn btn-primary" value="Buscar">
         </div>
+        <span> Campos Obrigatórios <strong>*</strong></span>
     </div>
 
 </form>

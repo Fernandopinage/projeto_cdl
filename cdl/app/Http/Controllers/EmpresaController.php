@@ -59,6 +59,21 @@ class EmpresaController extends Controller
     public function store(Request $request)
     {
 
+                // validando campos obrigatorios caso um dos campos esteja em banco nao inserir no banco de dados 
+                $this->validate($request,[
+
+                    'razao'=>'required',
+                    'cnpj'=>'required',
+                    'senha'=>'required',
+                    'confirmar'=>'required',
+                    'ramo'=>'required',
+                    'cep'=>'required',
+                    'uf'=>'required',
+                    'cidade'=>'required',
+                    'bairro'=>'required',
+                    'termo'=>'required'
+                ]);
+
         if($request->senha === $request->confirmar){
 
             $empresa = new Empresa();
