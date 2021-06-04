@@ -64,7 +64,7 @@ class VagasController extends Controller
             'cidade'=>'required'
         ]);
 
-
+        // Cadastra os dados para vagas
         $anucio = new Vagas();
         $anucio->vag_data_inicio = $request->datainicio;
         $anucio->vag_data_final = $request->datafim;
@@ -95,8 +95,7 @@ class VagasController extends Controller
         $anucio->vag_pcd = $request->pcd;
         $anucio->vag_pcd_descricao = $request->descricao_pcd;
         $anucio->save();
-
-        return redirect('/anucio/empresa'); // redirecionar para tela de anuncio
+        return redirect('/anucio/empresa')->with('mensagem','Registro cadastrado com sucesso!'); // redirecionar para tela de anuncio
         
     }
 }
