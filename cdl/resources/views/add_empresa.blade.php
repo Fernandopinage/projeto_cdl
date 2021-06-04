@@ -123,6 +123,7 @@
                 <input type="text" class="form-control form-control-sm" name="rua" id="rua" placeholder="">
             </div>
         </div>
+        
     </div>
         <br><br>
         <span>  Campos Obrigatórios <strong>*</strong></span>
@@ -165,7 +166,7 @@
             <h2 class="form-signin-heading">TERMO</h2>
             <hr>
         </div>
-        <div class="termo">    
+            
         <div class="row g-3">
             <div class="col-md-6">
             </div>
@@ -178,7 +179,6 @@
                 </div>
             </div> 
         </div>
-         </div>
         <hr>
         <div class="text-end">
             <input type="submit" class="btn btn-primary" value="Buscar">

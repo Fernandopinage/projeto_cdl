@@ -59,6 +59,7 @@ class EmpresaController extends Controller
     public function store(Request $request)
     {
         
+        
                 // validando campos obrigatorios caso um dos campos esteja em banco nao inserir no banco de dados 
                 $this->validate($request,[
 
@@ -68,7 +69,6 @@ class EmpresaController extends Controller
                     'cep'=>'required',
                     'termo'=>'required'
                 ]);
-                
                 // Verificando se os campos de senhas são iguais     
         if($request->senha === $request->confirmar){
 
@@ -101,7 +101,7 @@ class EmpresaController extends Controller
             
         }else{
             return redirect('add/empresa');
-        }
+        }   
     }
 
   
