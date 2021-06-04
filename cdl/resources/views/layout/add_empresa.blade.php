@@ -172,10 +172,24 @@
     });
 </script>
 
+<!-- Mensagem de cadastro com sucesso -->
+@if(session('mensagem'))
+  <script>
+  Swal.fire({
+  position: 'center',
+  icon: 'success',
+  title: 'Registro cadastrado com sucesso!',
+  showConfirmButton: false,
+  timer: 1500
+})
+</script>
+@endif
 
-@if (session('success'))
+<!-- Mesagem de validação de campos  -->
+
+@if ($errors->any())
 <script>
-  Swal.fire({  position: 'center',  icon: 'success',  title: 'Cadastro realizando com sucesso',  showConfirmButton: false,  timer: 1500  })
+Swal.fire({  position: 'center',  icon: 'warning',  title: 'Preencha os campos obrigatório',  showConfirmButton: false,  timer: 1500  })
 </script>
 @endif
 

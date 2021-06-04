@@ -151,8 +151,7 @@
             <div class="col-md-6">
             </div>
         </div>
-        <br><br>
-        <span>  Campos Obrigatórios <strong>*</strong></span>
+        
     </div>
 
     <div class="form-signin">
@@ -169,7 +168,7 @@
                 <div class="text-center">
                     <label class="form-check-label" for="flexCheckIndeterminate">Termo de política <span><strong>*</strong></span></label>
                     <div class="form-check">
-                        <input class="form-check-inpu" type="checkbox" value="" name="termo" id="flexCheckDefault">
+                        <input class="form-check-inpu" type="checkbox" value="S" name="termo" id="">
                     </div>
                 </div>
             </div> 
