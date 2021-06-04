@@ -19,6 +19,7 @@
             <hr>
         </div>
         
+        
         <div class="pessoais">
 
             <div class="row g-3">
@@ -80,10 +81,12 @@
         <br><br>
         <span>  Campos Obrigatórios <strong>*</strong></span>
     </div>
+
+
     <div class="form-signin">
         <div class="text-end">
             <label class="switch">
-                <input type="checkbox" checked>
+                <input type="checkbox" id="endereco" checked>
                 <span class="slider round"></span>
             </label>
         </div>
@@ -92,7 +95,8 @@
             <h2 class="form-signin-heading">ENDEREÇO</h2>
             <hr>
         </div>
-            
+         
+        <div class="endereco"> 
         <div class="row g-3">
             <div class="col-md-2">
                 <label class="form-check-label" for="flexCheckIndeterminate">CEP <span><strong>*</strong></span></label>
@@ -119,7 +123,7 @@
                 <input type="text" class="form-control form-control-sm" name="rua" id="rua" placeholder="">
             </div>
         </div>
-       
+    </div>
         <br><br>
         <span>  Campos Obrigatórios <strong>*</strong></span>
     </div>
@@ -128,15 +132,16 @@
     <div class="form-signin">
         <div class="text-end">
             <label class="switch">
-                <input type="checkbox" checked>
+                <input type="checkbox" id="adcinais" checked>
                 <span class="slider round"></span>
             </label>
         </div>
-        <div class="row g-3">
         <div class="text" >
             <h2 class="form-signin-heading">INFORMAÇÕES ADICIONAIS</h2>
             <hr>
         </div>
+        <div class="adcinais"> 
+        <div class="row g-3">
             <div class="col-md-2">
                 <input type="hidden" value="1" name="status"> <!-- campo responsavel por ativar empresa -->
                 <div class="form-check">
@@ -151,7 +156,7 @@
             <div class="col-md-6">
             </div>
         </div>
-        
+    </div>
     </div>
 
     <div class="form-signin">
@@ -160,7 +165,7 @@
             <h2 class="form-signin-heading">TERMO</h2>
             <hr>
         </div>
-            
+        <div class="termo">    
         <div class="row g-3">
             <div class="col-md-6">
             </div>
@@ -173,6 +178,7 @@
                 </div>
             </div> 
         </div>
+         </div>
         <hr>
         <div class="text-end">
             <input type="submit" class="btn btn-primary" value="Buscar">
