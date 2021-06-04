@@ -31,11 +31,11 @@ class EmpresaController extends Controller
                 if (Hash::check($request->password, $empresa->emp_senha)) {     //  decodificando senha hash 
                     echo "ok";                                                  // redirecinanmento se estiver tudo certo
                 }else{
-                    return redirect()->intended('/login/empresa');              // redirecinamento caso senha nao seja valida
+                    return redirect('/login/empresa')->with('mensagem', 'Email ou Senha incorretos!');     // redirecinamento caso senha nao seja valida
                 }
             }else{
 
-                return redirect()->intended('/login/empresa');                  // caso não existe o email
+                return redirect('/login/empresa')->with('mensagem', 'Email ou Senha incorretos!');                 // caso não existe o email
             }
            
     }
