@@ -41,41 +41,41 @@
                 </div>
                 <div class="col-md-4">
                     <label class="form-check-label" for="flexCheckIndeterminate">Formação</label>
-                    <select class="form-select form-select-sm" aria-label="Default select example">
+                    <select class="form-select form-select-sm" name="formacao" id="formacao" aria-label="Default select example">
                         <option selected></option>
-                        <option value="1">Ensino fundamental completo</option>
-                        <option value="2">Ensino fundamental incompleto</option>
-                        <option value="3">Ensino Médio completo</option>
-                        <option value="4">Ensino Médio cursando</option>
-                        <option value="5">Ensino Técnico cursando</option>
-                        <option value="6">Ensino Técnico completo</option>
-                        <option value="7">Superior Cursando</option>
-                        <option value="7">Superior Completo</option>
-                        <option value="7">Pós-Graduação Cursando</option>
-                        <option value="7">Pós-Graduação Completo</option>
+                        <option value="fundamental completo">Ensino fundamental completo</option>
+                        <option value="fundamental incompleto">Ensino fundamental incompleto</option>
+                        <option value="medio completo">Ensino Médio completo</option>
+                        <option value="medio cursando">Ensino Médio cursando</option>
+                        <option value="tecnico cursando">Ensino Técnico cursando</option>
+                        <option value="tecnico completo">Ensino Técnico completo</option>
+                        <option value="superior cursando">Superior Cursando</option>
+                        <option value="superior completo">Superior Completo</option>
+                        <option value="pos cursando">Pós-Graduação Cursando</option>
+                        <option value="pos completo">Pós-Graduação Completo</option>
                       </select>
                 </div>
 
-                <div class="col-md-3">
+                <div class="col-md-3" id="curso">
                     <label class="form-check-label" for="flexCheckIndeterminate">Nome do curso </label>
-                    <input type="text" class="form-control form-control-sm" name="senha" placeholder="">
+                    <input type="text" class="form-control form-control-sm"  name="curso" placeholder="">
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-2" id="termino">
                     <label class="form-check-label" for="flexCheckIndeterminate">Ano de termino </label>
-                    <input type="number" min="1900" max="2099" class="form-control form-select-sm" name="email" placeholder="">
+                    <input type="number" min="1900" max="2099" class="form-control form-select-sm" name="termino" placeholder="">
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-2" id="semetre">
                     <label class="form-check-label" for="flexCheckIndeterminate">Semestre em Curso </label>
-                    <select class="form-select form-select-sm" aria-label="Default select example">
+                    <select class="form-select form-select-sm" name="semetre"  aria-label="Default select example">
                         <option selected></option>
                         <option value="1">1º Semestre</option>
                         <option value="2">2º Semestre</option>
                   
                     </select>
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-2" id="periodo">
                     <label class="form-check-label" for="flexCheckIndeterminate">Périodo em Curso </label>
-                    <select class="form-select form-select-sm" aria-label="Default select example">
+                    <select class="form-select form-select-sm" name="periodo"  aria-label="Default select example">
                         <option selected></option>
                         <option value="1">1º Périodo</option>
                         <option value="2">2º Périodo</option>
@@ -91,7 +91,7 @@
                 </div>
                 <div class="col-md-3">
                     <label class="form-check-label" for="flexCheckIndeterminate">Bairro </label>
-                    <input type="text"class="form-control form-select-sm" name="email" placeholder="">
+                    <input type="text"class="form-control form-select-sm" name="bairro" placeholder="">
                 </div>
                 <div class="col-md-2">
                     <label class="form-check-label" for="flexCheckIndeterminate">Idioma</label>
