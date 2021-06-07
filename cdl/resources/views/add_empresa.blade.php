@@ -181,7 +181,7 @@
         </div>
         <hr>
         <div class="text-end">
-            <input type="submit" class="btn btn-primary" value="Buscar">
+            <input type="submit" class="btn btn-primary" value="Salvar Registros">
         </div>
         <span> Campos Obrigatórios <strong>*</strong></span>
     </div>
