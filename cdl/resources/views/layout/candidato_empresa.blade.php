@@ -114,7 +114,18 @@
       $('#semetre').hide();
       $('#periodo').hide();
         
-    });
+      $('#ingle').change(function(){
+        
+      });
+      $('#espanhol').change(function(){
+        
+      });
+      $('#frances').change(function(){
+        
+      });
+      $('#inoutrosgle').change(function(){
+        
+      });
 
     $('#formacao').change(function(){
 
@@ -124,54 +135,67 @@
           $('#termino').show();
           $('#semetre').hide();
           $('#periodo').hide();
-        }
-        if(document.getElementById('formacao').value == 'fundamental incompleto' ){
+        }else if(document.getElementById('formacao').value == 'fundamental incompleto' ){
 
           $('#curso').hide();
           $('#termino').show();
           $('#semetre').hide();
           $('#periodo').hide();
-        }
-
-        if(document.getElementById('formacao').value == 'medio completo' ){
+        }else if(document.getElementById('formacao').value == 'medio completo' ){
 
           $('#curso').hide();
           $('#termino').show();
           $('#semetre').hide();
           $('#periodo').hide();
-        }
-
-        if(document.getElementById('formacao').value == 'medio cursando'){
+        }else if(document.getElementById('formacao').value == 'medio cursando'){
 
           $('#curso').hide();
           $('#termino').show();
           $('#semetre').hide();
           $('#periodo').hide();
-        }
-
-        if(document.getElementById('formacao').value == 'tecnico cursando'){
+        }else if(document.getElementById('formacao').value == 'tecnico cursando'){
 
           $('#curso').show();
           $('#termino').hide();
           $('#semetre').show();
           $('#periodo').hide();
-        }
-
-        if(document.getElementById('formacao').value == 'tecnico completo'){
+        }else if(document.getElementById('formacao').value == 'tecnico completo'){
 
           $('#curso').show();
           $('#termino').hide();
           $('#semetre').hide();
           $('#periodo').hide();
-        }
-        if(document.getElementById('formacao').value == 'superior cursando'){
+        }else if(document.getElementById('formacao').value == 'superior cursando'){
 
           $('#curso').show();
           $('#termino').hide();
           $('#semetre').hide();
           $('#periodo').show();
-        }
+        }else if(document.getElementById('formacao').value == 'superior completo'){
 
+          $('#curso').show();
+          $('#termino').hide();
+          $('#semetre').hide();
+          $('#periodo').hide();
+        }else if(document.getElementById('formacao').value == 'pos cursando'){
+
+          $('#curso').show();
+          $('#termino').hide();
+          $('#semetre').hide();
+          $('#periodo').show();
+        }else if(document.getElementById('formacao').value == 'pos completo'){
+
+          $('#curso').show();
+          $('#termino').hide();
+          $('#semetre').hide();
+          $('#periodo').hide();
+        }else{
+          $('#curso').hide();
+          $('#termino').hide();
+          $('#semetre').hide();
+          $('#periodo').hide();
+        }
+      });
     });
 
 </script>

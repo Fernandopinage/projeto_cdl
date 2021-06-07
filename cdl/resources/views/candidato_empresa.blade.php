@@ -96,25 +96,25 @@
                 <div class="col-md-2">
                     <label class="form-check-label" for="flexCheckIndeterminate">Idioma</label>
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <input class="form-check-input" type="checkbox" value="" id="ingle">
                         <label class="form-check-label" for="flexCheckDefault">
                           Inglês
                         </label>
                       </div>
                       <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                        <input class="form-check-input" type="checkbox" value="" id="espanhol">
                         <label class="form-check-label" for="flexCheckChecked">
                           Espanhol
                         </label>
                       </div>
                       <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                        <input class="form-check-input" type="checkbox" value="" id="frances">
                         <label class="form-check-label" for="flexCheckChecked">
                           Francês
                         </label>
                       </div>
                       <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                        <input class="form-check-input" type="checkbox" value="" id="outros">
                         <label class="form-check-label" for="flexCheckChecked">
                           Outros
                         </label>
