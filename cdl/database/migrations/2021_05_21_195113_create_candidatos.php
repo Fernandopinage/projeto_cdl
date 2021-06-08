@@ -54,20 +54,26 @@ class CreateCandidatos extends Migration
             $table->char('can_idioma_escrita_nivel',1); //  Campo referente a nível de habilidade de escrita
             $table->char('can_idioma_leitura',1);       //  Campo referente a leitura do candidato
             $table->char('can_idioma_leitura_nivel',1); //  Campo referente a nível de habilidade de leitura  
-            $table->char('can_fundamental',1);          //  Campo referente se o candidato possua ensino fundamental
-            $table->date('can_fundamental_ano');        //  Ano de conclusão do ensino fundamental
-            $table->char('can_medio',1);                //  Campo referente se o candidato possui ensino médio
+
+            $table->string('formacao',150);             //  campo referente a formação do candidado 
+          // $table->char('can_fundamental',1);          //  Campo referente se o candidato possua ensino fundamental
+          //  $table->date('can_fundamental_ano');        //  Ano de conclusão do ensino fundamental
+
+          //  $table->char('can_medio',1);                //  Campo referente se o candidato possui ensino médio
+            $table->char('can_medio_letivo',1);         //  Campo referente saber se aluno está no 1º 2º e 3º
             $table->date('can_medio_ano');               //  Ano de conclusão do ensino médio
-            $table->char('can_tecnico',1);             //  Campo referente se o candidato possui ensino técnico
+          //  $table->char('can_tecnico',1);             //  Campo referente se o candidato possui ensino técnico
             $table->string('can_inst_tecnico',100);     //  Instituição de ensino técnico
             $table->string('can_inst_curso_tecnico',100);// Nome do curso do ensino técnico
-            $table->string('can_inst_semest_tecnico',100);// Semestre ensino técnico
-            $table->char('can_superior',1);              //   Campo referente se o candidato possui ensino superior
+            $table->char('can_inst_semest_tecnico',1);  // Semestre ensino técnico 1º ou 2º
+
+
+          //  $table->char('can_superior',1);              //   Campo referente se o candidato possui ensino superior
             $table->string('can_curso_superior',100);   //  Curso do ensino superior
             $table->string('can_periodo_superior',100); //  Período do ensino superior
             $table->string('can_instituicao_superior',100); //  Instituição do ensino superior
             $table->date('can_superior_ano');           //   Data de término do ensino superior
-            $table->char('can_pos',1);                 //  Campo referente a se o candidato possui pós-graduação
+          //  $table->char('can_pos',1);                 //  Campo referente a se o candidato possui pós-graduação
             $table->string('can_curso_pos',100);         //  Nome do curso da pós-graduação
             $table->string('can_instituicao_pos',100); // Instituição da pós graduação
             $table->string('can_periodo_pos',100);     //  Período da pós graduação

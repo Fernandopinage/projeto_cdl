@@ -109,48 +109,45 @@
 <script>
     $(document).ready(function() {
 
-      $('#curso').hide();
-      $('#termino').hide();
+      $('#letivo_medio').hide();
+      $('#termino_medeio').hide();
+      $('#curso_tecnico').hide();
       $('#semetre').hide();
-      $('#periodo').hide();
-        
-      $('#ingle').change(function(){
-        
-      });
-      $('#espanhol').change(function(){
-        
-      });
-      $('#frances').change(function(){
-        
-      });
-      $('#inoutrosgle').change(function(){
-        
-      });
+      $('#curso_superior').hide();
+      $('#periodo_superior').hide();
+      $('#curso_pos').hide();
+      $('#leitura').hide();
+      $('#escrita').hide();
+      
 
-    $('#formacao').change(function(){
+      $('#formacao').change(function(){
 
         if(document.getElementById('formacao').value == 'fundamental completo'){
 
           $('#curso').hide();
-          $('#termino').show();
+          $('#termino').hide();
           $('#semetre').hide();
           $('#periodo').hide();
+          $('#letivo').hide();
         }else if(document.getElementById('formacao').value == 'fundamental incompleto' ){
 
           $('#curso').hide();
-          $('#termino').show();
+          $('#termino').hide();
           $('#semetre').hide();
           $('#periodo').hide();
+          $('#letivo').hide();
         }else if(document.getElementById('formacao').value == 'medio completo' ){
 
           $('#curso').hide();
           $('#termino').show();
           $('#semetre').hide();
           $('#periodo').hide();
+          $('#letivo').hide();
         }else if(document.getElementById('formacao').value == 'medio cursando'){
 
+          $('#letivo').show();
           $('#curso').hide();
-          $('#termino').show();
+          $('#termino').hide();
           $('#semetre').hide();
           $('#periodo').hide();
         }else if(document.getElementById('formacao').value == 'tecnico cursando'){
