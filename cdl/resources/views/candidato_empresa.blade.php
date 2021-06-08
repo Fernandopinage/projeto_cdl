@@ -118,6 +118,22 @@
                     <label class="form-check-label" for="flexCheckIndeterminate">Nome do Curso </label>
                     <input type="text" class="form-control form-control-sm"  name="pos" placeholder="">
                 </div>
+                <div class="col-md-2" id="modulo_pos">
+                    <label class="form-check-label" for="flexCheckIndeterminate">Modulo da Pós </label>
+                    <select class="form-select form-select-sm" name="periodo"  aria-label="Default select example">
+                        <option selected></option>
+                        <option value="1">1º Modulo</option>
+                        <option value="2">2º Modulo</option>
+                        <option value="3">3º Modulo</option>
+                        <option value="4">4º Modulo</option>
+                        <option value="5">5º Modulo</option>
+                        <option value="6">6º Modulo</option>
+                        <option value="7">7º Modulo</option>
+                        <option value="8">8º Modulo</option>
+                        <option value="9">Ou Modulo</option>
+                        
+                      </select>
+                </div>
  <!--*************************************** ----------- ***********************************************-->   
  
  
@@ -153,62 +169,199 @@
                       </div>
                 </div>
 
-                <div class="col-md-2" id="leitura">
+                <div class="col-md-2" id="leitura_ingles">
                     <label class="form-check-label" for="flexCheckIndeterminate">Nivel de Leitura</label>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                        <input class="form-check-input" type="radio" name="leitura_ingles" id="exampleRadios1" value="option1" checked>
                         <label class="form-check-label" for="exampleRadios1">
                             Basico
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                        <input class="form-check-input" type="radio" name="leitura_ingles" id="exampleRadios2" value="option2">
                         <label class="form-check-label" for="exampleRadios2">
                             Intermediario
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                        <input class="form-check-input" type="radio" name="leitura_ingles" id="exampleRadios3" value="option3">
                         <label class="form-check-label" for="exampleRadios3">
                             Avançado
                         </label>
                     </div>
                 </div>
 
-                <div class="col-md-2" id="escrita">
+                <div class="col-md-2" id="escrita_ingles">
                     <label class="form-check-label" for="flexCheckIndeterminate">Nivel de Escrita</label>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="exampleRadios1" id="exampleRadios1" value="option1" checked>
+                        <input class="form-check-input" type="radio" name="escrita_ingles" id="exampleRadios1" value="option1" checked>
                         <label class="form-check-label" for="exampleRadios1">
                             Basico
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="exampleRadios1" id="exampleRadios2" value="option2">
+                        <input class="form-check-input" type="radio" name="escrita_ingles" id="exampleRadios2" value="option2">
                         <label class="form-check-label" for="exampleRadios2">
                             Intermediario
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="exampleRadios1" id="exampleRadios3" value="option3">
+                        <input class="form-check-input" type="radio" name="escrita_ingles" id="exampleRadios3" value="option3">
                         <label class="form-check-label" for="exampleRadios3">
                             Avançado
                         </label>
                     </div>
                 </div>
+                
+                <div class="col-md-2" id="leitura_espanhol">
+                    <label class="form-check-label" for="flexCheckIndeterminate">Nivel de Leitura</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="leitura_espanhol" id="exampleRadios1" value="option1" checked>
+                        <label class="form-check-label" for="exampleRadios1">
+                            Basico
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="leitura_espanhol" id="exampleRadios2" value="option2">
+                        <label class="form-check-label" for="exampleRadios2">
+                            Intermediario
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="leitura_espanhol" id="exampleRadios3" value="option3">
+                        <label class="form-check-label" for="exampleRadios3">
+                            Avançado
+                        </label>
+                    </div>
+                </div>
+
+                <div class="col-md-2" id="escrita_espanhol">
+                    <label class="form-check-label" for="flexCheckIndeterminate">Nivel de Escrita</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="escrita_espanhol" id="exampleRadios1" value="option1" checked>
+                        <label class="form-check-label" for="exampleRadios1">
+                            Basico
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="escrita_espanhol" id="exampleRadios2" value="option2">
+                        <label class="form-check-label" for="exampleRadios2">
+                            Intermediario
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="escrita_espanhol" id="exampleRadios3" value="option3">
+                        <label class="form-check-label" for="exampleRadios3">
+                            Avançado
+                        </label>
+                    </div>
+                </div>
+
+                
+                <div class="col-md-2" id="leitura_frances">
+                    <label class="form-check-label" for="flexCheckIndeterminate">Nivel de Leitura</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="leitura_frances" id="exampleRadios1" value="option1" checked>
+                        <label class="form-check-label" for="exampleRadios1">
+                            Basico
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="leitura_frances" id="exampleRadios2" value="option2">
+                        <label class="form-check-label" for="exampleRadios2">
+                            Intermediario
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="leitura_frances" id="exampleRadios3" value="option3">
+                        <label class="form-check-label" for="exampleRadios3">
+                            Avançado
+                        </label>
+                    </div>
+                </div>
+
+                <div class="col-md-2" id="escrita_frances">
+                    <label class="form-check-label" for="flexCheckIndeterminate">Nivel de Escrita</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="escrita_frances" id="exampleRadios1" value="option1" checked>
+                        <label class="form-check-label" for="exampleRadios1">
+                            Basico
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="escrita_frances" id="exampleRadios2" value="option2">
+                        <label class="form-check-label" for="exampleRadios2">
+                            Intermediario
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="escrita_frances" id="exampleRadios3" value="option3">
+                        <label class="form-check-label" for="exampleRadios3">
+                            Avançado
+                        </label>
+                    </div>
+                </div>
+
+
+                
+                <div class="col-md-2" id="leitura_outros">
+                    <label class="form-check-label" for="flexCheckIndeterminate">Nivel de Leitura</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="leitura_outros" id="exampleRadios1" value="option1" checked>
+                        <label class="form-check-label" for="exampleRadios1">
+                            Basico
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="leitura_outros" id="exampleRadios2" value="option2">
+                        <label class="form-check-label" for="exampleRadios2">
+                            Intermediario
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="leitura_outros" id="exampleRadios3" value="option3">
+                        <label class="form-check-label" for="exampleRadios3">
+                            Avançado
+                        </label>
+                    </div>
+                </div>
+
+                <div class="col-md-2" id="escrita_outros">
+                    <label class="form-check-label" for="flexCheckIndeterminate">Nivel de Escrita</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="escrita_outros" id="exampleRadios1" value="option1" checked>
+                        <label class="form-check-label" for="exampleRadios1">
+                            Basico
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="escrita_outros" id="exampleRadios2" value="option2">
+                        <label class="form-check-label" for="exampleRadios2">
+                            Intermediario
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="escrita_outros" id="exampleRadios3" value="option3">
+                        <label class="form-check-label" for="exampleRadios3">
+                            Avançado
+                        </label>
+                    </div>
+                </div>
+
+
 
                 <div class="col-md-2">
                     <label class="form-check-label" for="flexCheckIndeterminate">PCD</label>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="pcd" id="exampleRadios2" value="s">
+                        <input class="form-check-input" type="radio" name="pcd" id="exampleRadios2" value="s" checked>
                         <label class="form-check-label" for="exampleRadios2">
-                            SIM
+                            Sim
                         </label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="pcd" id="exampleRadios3" value="n" >
                         <label class="form-check-label" for="exampleRadios3">
-                            NÃO
+                            Não
                         </label>
                     </div>
                 </div>

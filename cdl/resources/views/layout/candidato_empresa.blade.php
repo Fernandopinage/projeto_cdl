@@ -116,82 +116,163 @@
       $('#curso_superior').hide();
       $('#periodo_superior').hide();
       $('#curso_pos').hide();
-      $('#leitura').hide();
-      $('#escrita').hide();
-      
+      $('modulo_pos').hide();
+      $('#leitura_ingles').hide();
+      $('#escrita_ingles').hide();
+      $('#leitura_espanhol').hide();
+      $('#escrita_espanhol').hide();
+      $('#leitura_frances').hide();
+      $('#escrita_frances').hide();
+      $('#leitura_outros').hide();
+      $('#escrita_outros').hide();
 
       $('#formacao').change(function(){
 
         if(document.getElementById('formacao').value == 'fundamental completo'){
 
-          $('#curso').hide();
-          $('#termino').hide();
-          $('#semetre').hide();
-          $('#periodo').hide();
-          $('#letivo').hide();
+            $('#letivo_medio').hide();
+            $('#termino_medeio').hide();
+            $('#curso_tecnico').hide();
+            $('#semetre').hide();
+            $('#curso_superior').hide();
+            $('#periodo_superior').hide();
+            $('#curso_pos').hide();
+            $('#modulo_pos').hide();
+            $('#leitura').hide();
+            $('#escrita').hide();
+            $('#modulo_pos').hide();
+
+
+
         }else if(document.getElementById('formacao').value == 'fundamental incompleto' ){
 
-          $('#curso').hide();
-          $('#termino').hide();
-          $('#semetre').hide();
-          $('#periodo').hide();
-          $('#letivo').hide();
+              $('#letivo_medio').hide();
+              $('#termino_medeio').hide();
+              $('#curso_tecnico').hide();
+              $('#semetre').hide();
+              $('#curso_superior').hide();
+              $('#periodo_superior').hide();
+              $('#curso_pos').hide();
+              $('#modulo_pos').hide();
+
+
         }else if(document.getElementById('formacao').value == 'medio completo' ){
 
-          $('#curso').hide();
-          $('#termino').show();
-          $('#semetre').hide();
-          $('#periodo').hide();
-          $('#letivo').hide();
+              $('#letivo_medio').hide();
+              $('#termino_medeio').show();
+              $('#curso_tecnico').hide();
+              $('#semetre').hide();
+              $('#curso_superior').hide();
+              $('#periodo_superior').hide();
+              $('#curso_pos').hide();
+              $('#modulo_pos').hide();
+
+
         }else if(document.getElementById('formacao').value == 'medio cursando'){
 
-          $('#letivo').show();
-          $('#curso').hide();
-          $('#termino').hide();
-          $('#semetre').hide();
-          $('#periodo').hide();
+              $('#letivo_medio').show();
+              $('#termino_medeio').hide();
+              $('#curso_tecnico').hide();
+              $('#semetre').hide();
+              $('#curso_superior').hide();
+              $('#periodo_superior').hide();
+              $('#curso_pos').hide();
+              $('#modulo_pos').hide();
+
+
         }else if(document.getElementById('formacao').value == 'tecnico cursando'){
 
-          $('#curso').show();
-          $('#termino').hide();
-          $('#semetre').show();
-          $('#periodo').hide();
+              $('#letivo_medio').hide();
+              $('#termino_medeio').hide();
+              $('#curso_tecnico').show();
+              $('#semetre').show();
+              $('#curso_superior').hide();
+              $('#periodo_superior').hide();
+              $('#curso_pos').hide();
+              $('#modulo_pos').hide();
+
+
         }else if(document.getElementById('formacao').value == 'tecnico completo'){
 
-          $('#curso').show();
-          $('#termino').hide();
-          $('#semetre').hide();
-          $('#periodo').hide();
+              $('#letivo_medio').hide();
+              $('#termino_medeio').hide();
+              $('#curso_tecnico').show();
+              $('#semetre').hide();
+              $('#curso_superior').hide();
+              $('#periodo_superior').hide();
+              $('#curso_pos').hide();
+              $('#modulo_pos').hide();
+
+
         }else if(document.getElementById('formacao').value == 'superior cursando'){
 
-          $('#curso').show();
-          $('#termino').hide();
-          $('#semetre').hide();
-          $('#periodo').show();
+              $('#letivo_medio').hide();
+              $('#termino_medeio').hide();
+              $('#curso_tecnico').hide();
+              $('#semetre').hide();
+              $('#curso_superior').show();
+              $('#periodo_superior').show();
+              $('#curso_pos').hide();
+              $('#modulo_pos').hide();
+
+
         }else if(document.getElementById('formacao').value == 'superior completo'){
 
-          $('#curso').show();
-          $('#termino').hide();
-          $('#semetre').hide();
-          $('#periodo').hide();
+              $('#letivo_medio').hide();
+              $('#termino_medeio').hide();
+              $('#curso_tecnico').hide();
+              $('#semetre').hide();
+              $('#curso_superior').show();
+              $('#periodo_superior').hide();
+              $('#curso_pos').hide();
+              $('#modulo_pos').hide();
+
+
         }else if(document.getElementById('formacao').value == 'pos cursando'){
 
-          $('#curso').show();
-          $('#termino').hide();
-          $('#semetre').hide();
-          $('#periodo').show();
-        }else if(document.getElementById('formacao').value == 'pos completo'){
+              $('#letivo_medio').hide();
+              $('#termino_medeio').hide();
+              $('#curso_tecnico').hide();
+              $('#semetre').hide();
+              $('#curso_superior').hide();
+              $('#periodo_superior').hide();
+              $('#curso_pos').show();
+              $('#modulo_pos').show();
 
-          $('#curso').show();
-          $('#termino').hide();
-          $('#semetre').hide();
-          $('#periodo').hide();
+
+        }else if(document.getElementById('formacao').value == 'pos completo'){
+              $('#letivo_medio').hide();
+              $('#termino_medeio').hide();
+              $('#curso_tecnico').hide();
+              $('#semetre').hide();
+              $('#curso_superior').hide();
+              $('#periodo_superior').hide();
+              $('#curso_pos').show();
+              $('#modulo_pos').hide();
+
         }else{
-          $('#curso').hide();
-          $('#termino').hide();
-          $('#semetre').hide();
-          $('#periodo').hide();
+            $('#letivo_medio').hide();
+            $('#termino_medeio').hide();
+            $('#curso_tecnico').hide();
+            $('#semetre').hide();
+            $('#curso_superior').hide();
+            $('#periodo_superior').hide();
+            $('#curso_pos').hide();
+            $('#modulo_pos').hide();
+
         }
+
+        if($("#ingle:checked").val() == undefined){
+            $("#ingle").prop('checked', false);
+            $('#leitura_ingles').hide();
+            $('#escrita_ingles').hide();
+        }else{
+            $("#ingle").prop('checked', true);
+            $('#leitura_ingles').show();
+            $('#escrita_ingles').show();
+        }
+
+
       });
     });
 

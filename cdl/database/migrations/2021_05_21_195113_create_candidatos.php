@@ -49,11 +49,20 @@ class CreateCandidatos extends Migration
             $table->char('can_filhos',1);               //   campo responsavel por pergunta se candidado possui filhos
             $table->double('can_salarial',8,2);         //   campo responsavel por prentençao salarial
             $table->char('can_status',1);               //  ativo ou inativo
+
+
             $table->char('can_idioma',1);               //  Campo referente à idiomas do candidato
-            $table->char('can_idioma_escrita',1);       //  Campo referente se escrita do candidato
-            $table->char('can_idioma_escrita_nivel',1); //  Campo referente a nível de habilidade de escrita
-            $table->char('can_idioma_leitura',1);       //  Campo referente a leitura do candidato
-            $table->char('can_idioma_leitura_nivel',1); //  Campo referente a nível de habilidade de leitura  
+            $table->char('can_idioma_escrita_ingl',1);  //  Campo referente se escrita do candidato
+            $table->char('can_idioma_leitura_ingl',1);  //  Campo referente a nível de habilidade de leitura  
+
+            $table->char('can_idioma_escrita_espa',1);  //  Campo referente se escrita do candidato
+            $table->char('can_idioma_leitura_espa',1);  //  Campo referente a nível de habilidade de leitura  
+
+            $table->char('can_idioma_escrita_fran',1);  //  Campo referente se escrita do candidato
+            $table->char('can_idioma_leitura_fran',1);  //  Campo referente a nível de habilidade de leitura 
+
+            $table->char('can_idioma_escrita_outr',1);  //  Campo referente se escrita do candidato
+            $table->char('can_idioma_leitura_outr',1);  //  Campo referente a nível de habilidade de leitura 
 
             $table->string('formacao',150);             //  campo referente a formação do candidado 
           // $table->char('can_fundamental',1);          //  Campo referente se o candidato possua ensino fundamental
