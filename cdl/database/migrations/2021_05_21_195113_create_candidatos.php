@@ -64,7 +64,7 @@ class CreateCandidatos extends Migration
             $table->char('can_idioma_escrita_outr',1);  //  Campo referente se escrita do candidato
             $table->char('can_idioma_leitura_outr',1);  //  Campo referente a nível de habilidade de leitura 
 
-            $table->string('formacao',150);             //  campo referente a formação do candidado 
+            $table->string('can_formacao',150);             //  campo referente a formação do candidado 
           // $table->char('can_fundamental',1);          //  Campo referente se o candidato possua ensino fundamental
           //  $table->date('can_fundamental_ano');        //  Ano de conclusão do ensino fundamental
 
