@@ -2,7 +2,7 @@
 
 @section('anuncio')
 
-<form method="post" action="/anucie/vaga/empresa" >
+<form method="get" action="/anucie/vaga/empresa" >
 
     @csrf
 
