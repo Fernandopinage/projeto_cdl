@@ -16,6 +16,7 @@ class CreateCandidatos extends Migration
             // candidato
 
         Schema::create('TBL_CANDIDATOS', function (Blueprint $table) {
+
             $table->integer('can_id')->unsigned();      //  chave primaria auto incremento
             $table->string('can_foto',250);             //  foto do candidato
             $table->string('can_nome',100);             //  nome do candidado 
@@ -64,14 +65,21 @@ class CreateCandidatos extends Migration
             $table->char('can_idioma_escrita_outr',1);  //  Campo referente se escrita do candidato
             $table->char('can_idioma_leitura_outr',1);  //  Campo referente a nível de habilidade de leitura 
 
-            $table->string('can_formacao',150);             //  campo referente a formação do candidado 
-          // $table->char('can_fundamental',1);          //  Campo referente se o candidato possua ensino fundamental
-          //  $table->date('can_fundamental_ano');        //  Ano de conclusão do ensino fundamental
 
-          //  $table->char('can_medio',1);                //  Campo referente se o candidato possui ensino médio
+            $table->char('can_curso_utv',1);            //  campo onde pergunta se possui curso UTV
+            $table->string('can_curso_utv_atuacao',100);//  área de atuação que curso abrange 
+            $table->string('can_curso_utv_titulo',100); //  titulo do campo que foi realizando 
+            $table->string('can_curso_utv_horas',10);   //  carga horaria que curso proporcionou
+            $table->date('can_curso_utv_emissao',10);   //  data qeu foi emitido o certificado
+
+            $table->string('can_formacao',150);         //  campo referente a formação do candidado 
+          // $table->char('can_fundamental',1);         //  Campo referente se o candidato possua ensino fundamental
+          //  $table->date('can_fundamental_ano');      //  Ano de conclusão do ensino fundamental
+
+          //  $table->char('can_medio',1);              //  Campo referente se o candidato possui ensino médio
             $table->char('can_medio_letivo',1);         //  Campo referente saber se aluno está no 1º 2º e 3º
-            $table->date('can_medio_ano');               //  Ano de conclusão do ensino médio
-          //  $table->char('can_tecnico',1);             //  Campo referente se o candidato possui ensino técnico
+            $table->date('can_medio_ano');              //  Ano de conclusão do ensino médio
+          //  $table->char('can_tecnico',1);            //  Campo referente se o candidato possui ensino técnico
             $table->string('can_inst_tecnico',100);     //  Instituição de ensino técnico
             $table->string('can_inst_curso_tecnico',100);// Nome do curso do ensino técnico
             $table->char('can_inst_semest_tecnico',1);  // Semestre ensino técnico 1º ou 2º
