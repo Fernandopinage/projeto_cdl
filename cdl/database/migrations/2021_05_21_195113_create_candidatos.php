@@ -40,7 +40,7 @@ class CreateCandidatos extends Migration
 
             $table->string('can_cep',8);                //  cep (Obrigatorio)
             $table->string('can_uf',2);                 //  uf (Obrigatorio)
-            $table->string('can_cidade',20);            //  cidade
+            $table->string('can_cidade',30);            //  cidade
             $table->string('can_bairro',100);           //  bairro   
             $table->string('can_logradouro',100);       //  logradouro
             $table->string('can_numero',10);            //  nuemro da residencia

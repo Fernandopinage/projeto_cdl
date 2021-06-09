@@ -26,7 +26,7 @@ class CreateOms extends Migration
             $table->string('oms_celular',14);           //  celular
             $table->string('oms_funcao',100);           //  função do contato tecnico 
             $table->string('oms_cep',8);                //  cep (Obrigatorio)
-            $table->string('oms_cidade',20);            //  cidade
+            $table->string('oms_cidade',30);            //  cidade
             $table->string('oms_bairro',100);           //  bairro   
             $table->string('oms_logradouro',100);       //  logradouro
             $table->string('oms_numero',10);            //  nuemro da residencia
