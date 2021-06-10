@@ -35,7 +35,9 @@ class CreateCandidatos extends Migration
             $table->string('can_rg',10);                //  RG
 
             $table->char('can_experiencia',1);          //  campo responsavel por pergunta se possui experiencia proficinal
-            $table->char('can_militar',1);              //  perguntar se o candidado e militar
+            $table->char('can_ex_militar',1);           //  perguntar se o candidado e militar
+            $table->string('can_matricula_militar',14); //  Matricula do ex militar
+            $table->string('can_unidade_militar',14);   //  unidade militar 
             $table->string('can_preferencia',250);      //  campo referente a preferência de vagas do candidato
 
             $table->string('can_cep',8);                //  cep (Obrigatorio)
@@ -70,10 +72,12 @@ class CreateCandidatos extends Migration
             $table->string('can_curso_utv_atuacao',100);//  área de atuação que curso abrange 
             $table->string('can_curso_utv_titulo',100); //  titulo do campo que foi realizando 
             $table->string('can_curso_utv_horas',10);   //  carga horaria que curso proporcionou
-            $table->date('can_curso_utv_emissao',10);   //  data qeu foi emitido o certificado
+            $table->date('can_curso_utv_anoinicio');   //  data qeu foi inicializado o curso
+            $table->date('can_curso_utv_anofinal');   //  data qeu foi emitido o certificado
+            $table->date('can_curso_utv_emissao');    // data de emissao de certificado
 
             $table->string('can_formacao',150);         //  campo referente a formação do candidado 
-          // $table->char('can_fundamental',1);         //  Campo referente se o candidato possua ensino fundamental
+            $table->char('can_fundamental',1);         //  Campo referente se o candidato possua ensino fundamental
           //  $table->date('can_fundamental_ano');      //  Ano de conclusão do ensino fundamental
 
           //  $table->char('can_medio',1);              //  Campo referente se o candidato possui ensino médio
@@ -83,7 +87,7 @@ class CreateCandidatos extends Migration
             $table->string('can_inst_tecnico',100);     //  Instituição de ensino técnico
             $table->string('can_inst_curso_tecnico',100);// Nome do curso do ensino técnico
             $table->char('can_inst_semest_tecnico',1);  // Semestre ensino técnico 1º ou 2º
-
+            $table->date('can_tecnico_anomes');         // campo destinado ano e mes de formação 
 
           //  $table->char('can_superior',1);              //   Campo referente se o candidato possui ensino superior
             $table->string('can_curso_superior',100);   //  Curso do ensino superior
