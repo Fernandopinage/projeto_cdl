@@ -310,7 +310,11 @@
                         </label>
                     </div>
                 </div>
-
+                
+                <div class="col-md-3">
+                    <label class="form-check-label" for="flexCheckIndeterminate">Nome do curso </label>
+                    <input type="text" class="form-control form-control-sm" name="curso" placeholder="">
+                </div>
 
                 
                 <div class="col-md-2" id="leitura_outros">
