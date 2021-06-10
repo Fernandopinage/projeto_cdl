@@ -52,7 +52,7 @@
                     
                 </div>
                
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <label class="form-check-label" for="flexCheckIndeterminate">Formação  <span><strong>*</strong></span></label>
                     <select class="form-select form-select-sm" name="formacao" aria-label="Default select example">
                         <option selected></option>
@@ -101,7 +101,7 @@
                         
                       </select>
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-3">
                     <label class="form-check-label" for="flexCheckIndeterminate">Experiência <span><strong>*</strong></span></label>
                     <select class="form-select form-select-sm" name="experiencia" aria-label="Default select example">
                         <option selected></option>
@@ -378,22 +378,22 @@
                 <div class="col-md-2">
                     <label class="form-check-label" for="flexCheckIndeterminate"> PCD?</label>
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="S" name="pcd" id="flexCheckDefault">
+                        <input class="form-check-input" type="checkbox" value="S" id="pcd" name="pcd" id="flexCheckDefault">
                         <label class="form-check-label" for="flexCheckDefault">
                         
                         </label>
                       </div>
                 </div>
-                <div class="mb-3">
+                <div class="mb-3" id="descPCD">
                     <label for="exampleFormControlTextarea1" class="form-label">Descreva a deficiêmcia</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" name="descricao_pcd" rows="4"></textarea>
+                    <textarea class="form-control" id="exampleFormControlTextarea1"  name="descricao_pcd" rows="4"></textarea>
                   </div>
                 
         </div> 
         <span>Campos Obrigatórios<strong>*</strong></span>
         <hr>
         <div class="text-end">
-            <input type="submit" class="btn btn-primary" value="Buscar">
+            <input type="submit" class="btn btn-primary" value="Anunciar">
         </div>
     </div>
 </div>

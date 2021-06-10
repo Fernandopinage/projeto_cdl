@@ -119,7 +119,22 @@
       $('#escrita_frances').hide();
       $('#leitura_outros').hide();
       $('#escrita_outros').hide();
+      $('#descPCD').hide();
+      
+      $('#pcd').change(function(){
 
+        if($("#pcd:checked").val() == undefined){
+            $("#pcd").prop('checked', false);
+            $('#descPCD').hide(); 
+            
+        }else{
+          $("#pcd").prop('checked', true);
+          $('#descPCD').show();  
+          $
+        }
+
+
+      });
 
       $('#ingle').change(function(){
 
@@ -159,6 +174,21 @@
             $('#escrita_frances').hide(); 
         }else{
           $("#frances").prop('checked', true);
+          $('#leitura_frances').show();  
+          $('#escrita_frances').show();
+        }
+
+
+      });
+
+        $('#outros').change(function(){
+
+        if($("#outros:checked").val() == undefined){
+            $("#outros").prop('checked', false);
+            $('#leitura_frances').hide(); 
+            $('#escrita_frances').hide(); 
+        }else{
+          $("#outros").prop('checked', true);
           $('#leitura_frances').show();  
           $('#escrita_frances').show();
         }
