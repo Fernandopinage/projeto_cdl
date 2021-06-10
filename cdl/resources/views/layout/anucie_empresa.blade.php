@@ -120,6 +120,7 @@
       $('#leitura_outros').hide();
       $('#escrita_outros').hide();
       $('#descPCD').hide();
+      $('#idioma_nome').hide();
       
       $('#pcd').change(function(){
 
@@ -185,12 +186,14 @@
 
         if($("#outros:checked").val() == undefined){
             $("#outros").prop('checked', false);
-            $('#leitura_frances').hide(); 
-            $('#escrita_frances').hide(); 
+            $('#leitura_outros').hide(); 
+            $('#escrita_outros').hide(); 
+            $('#idioma_nome').hide();
         }else{
           $("#outros").prop('checked', true);
-          $('#leitura_frances').show();  
-          $('#escrita_frances').show();
+          $('#leitura_outros').show();  
+          $('#escrita_outros').show();
+          $('#idioma_nome').show();
         }
 
 

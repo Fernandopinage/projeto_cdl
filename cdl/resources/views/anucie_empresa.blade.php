@@ -310,15 +310,15 @@
                         </label>
                     </div>
                 </div>
-                
-                <div class="col-md-3">
-                    <label class="form-check-label" for="flexCheckIndeterminate">Nome do curso </label>
+
+                <div class="col-md-3" id="idioma_nome">
+                    <label class="form-check-label" for="flexCheckIndeterminate">Nome do Idioma </label>
                     <input type="text" class="form-control form-control-sm" name="curso" placeholder="">
                 </div>
 
                 
                 <div class="col-md-2" id="leitura_outros">
-                    <label class="form-check-label" for="flexCheckIndeterminate">Nivel de Leitura</label>
+                    <label class="form-check-label" for="flexCheckIndeterminate">Nivel de Leitura (Outros)</label>
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="leitura_outros" id="leitura_outros" value="B" checked>
                         <label class="form-check-label" for="leitura_outros">
@@ -340,7 +340,7 @@
                 </div>
 
                 <div class="col-md-2" id="escrita_outros">
-                    <label class="form-check-label" for="flexCheckIndeterminate">Nivel de Escrita</label>
+                    <label class="form-check-label" for="flexCheckIndeterminate">Nivel de Escrita (Outros)</label>
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="escrita_outros" id="leitura_outros" value="B" checked>
                         <label class="form-check-label" for="leitura_outros">
