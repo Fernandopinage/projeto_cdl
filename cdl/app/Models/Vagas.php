@@ -14,4 +14,12 @@ class Vagas extends Model
 
         //  definindo chave primaria
         protected $primaryKey = 'vag_id';
+
+
+        
+        protected $casts = [
+            'vag_idioma' => 'array',
+        ];
+
+
 }

@@ -65,6 +65,9 @@ class VagasController extends Controller
         ]);
 
         // Cadastra os dados para vagas
+
+
+        
         $anucio = new Vagas();
         $anucio->vag_data_inicio = $request->datainicio;
         $anucio->vag_data_final = $request->datafim;
@@ -84,18 +87,23 @@ class VagasController extends Controller
         $anucio->vag_uf = $request->uf;
         $anucio->vag_bairro = $request->bairro;
         $anucio->vag_descricao = $request->descricao;
-        $anucio->vag_idioma = $request->idioma;
-        $anucio->vag_idioma_ingles = $request->ingles;
-        $anucio->vag_idioma_espanhol = $request->espanhol;
-        $anucio->vag_idioma_frances = $request->framces;
-        $anucio->vag_idioma_outros = $request->outros;
-        $anucio->vag_idioma_leitura = $request->leitura;
-        $anucio->vag_idioma_escrita = $request->Escrita;
+        $anucio->vag_idioma_necessario = $request->idioma_necessario;
+        $anucio->vag_idioma = $request->itens;
+        
+        $anucio->vag_idioma_escrita_ingl = $request->escrita_ingles;   
+        $anucio->vag_idioma_leitura_ingl = $request->leitura_ingles;
+        $anucio->vag_idioma_escrita_espa = $request->escrita_espanhol;   
+        $anucio->vag_idioma_leitura_espa = $request->leitura_espanhol;
+        $anucio->vag_idioma_escrita_fran = $request->escrita_frances;   
+        $anucio->vag_idioma_leitura_fran = $request->leitura_frances;
+        $anucio->vag_idioma_escrita_outr = $request->escrita_outros;   
+        $anucio->vag_idioma_leitura_outr = $request->leitura_outros;
+
         $anucio->vag_salario = $request->salario;
         $anucio->vag_pcd = $request->pcd;
         $anucio->vag_pcd_descricao = $request->descricao_pcd;
         $anucio->save();
-        return redirect('/anucio/empresa')->with('mensagem','Registro cadastrado com sucesso!'); // redirecionar para tela de anuncio
+       return redirect('/anucio/empresa')->with('mensagem','Registro cadastrado com sucesso!'); // redirecionar para tela de anuncio
         
     }
 }

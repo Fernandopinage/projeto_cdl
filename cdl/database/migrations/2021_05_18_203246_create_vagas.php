@@ -38,13 +38,21 @@ class CreateVagas extends Migration
            // $table->string('vag_rua',100)->nullable();              // rua/complemento
             $table->char('vag_opcao',100)->nullable();              // opão para vaga é remoto       
             $table->char('vag_oculta',1)->nullable();               // ocultar empresa  (obrigatprio)     
-            $table->char('vag_idioma',1)->nullable();               // idioma 
-            $table->char('vag_idioma_ingles',1)->nullable();        // idioma ingles 
-            $table->char('vag_idioma_espanhol',1)->nullable();      // idioma espanhol 
-            $table->char('vag_idioma_frances',1)->nullable();       // idioma franes 
-            $table->char('vag_idioma_outros',1)->nullable();        // idioma outros idiomas
-            $table->char('vag_idioma_leitura',1)->nullable();    // idioma leitura
-            $table->char('vag_idioma_escrita',1)->nullable();    // idioma escrita
+
+            $table->char('vag_idioma_necessario',1)->nullable();                //  Campo responsavel por pergunta se necessario o idioma
+            $table->json('vag_idioma')->nullable();                           //  Campo referente qual idioma foi marcado
+            $table->char('vag_idioma_escrita_ingl',1)->nullable();              //  Campo referente se escrita do candidato
+            $table->char('vag_idioma_leitura_ingl',1)->nullable();              //  Campo referente a nível de habilidade de leitura  
+            
+            $table->char('vag_idioma_escrita_espa',1);              //  Campo referente se escrita do candidato
+            $table->char('vag_idioma_leitura_espa',1);              //  Campo referente a nível de habilidade de leitura  
+
+            $table->char('vag_idioma_escrita_fran',1);              //  Campo referente se escrita do candidato
+            $table->char('vag_idioma_leitura_fran',1);              //  Campo referente a nível de habilidade de leitura 
+
+            $table->char('vag_idioma_escrita_outr',1);              //  Campo referente se escrita do candidato
+            $table->char('vag_idioma_leitura_outr',1);              //  Campo referente a nível de habilidade de leitura
+            
             $table->char('vag_pcd',1)->nullable();                // se possui deficiencia 
             $table->longText('vag_pcd_descricao')->nullable();      // caso possua deficiencia campo para descrever       
             $table->timestamps();
