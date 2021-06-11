@@ -14,10 +14,8 @@
     background: url('/img/Login_empresa.jpg');
     background-size: cover; 
     background-attachment: fixed, scroll;
-    background-repeat: no-repeat, repeat-y;
-    /*border: 0px solid rgb(22, 22, 22);*/
   }
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 500px) {
     .folder{
       margin: 7px 7px 7px 7px;
       background: url();

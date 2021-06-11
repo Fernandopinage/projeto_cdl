@@ -1,9 +1,8 @@
 body{
-    background: repeat-y url('/img/login_m.jpg') ;
-    position: relative;
-    height: 100vh;
-    width: 100vw;
-    background-size: cover;
+    background: repeat-y url('/img/Login_OMS.png') ;
+    background-size: cover; 
+    background-attachment: fixed, scroll;
+    background-repeat: no-repeat, repeat-y;
     
 }
 #menu{
