@@ -23,7 +23,7 @@
         </li>
 
       </ul>
-    <nav class="navbar navbar-expand-lg navbar-light">
+      <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="/"><img id="logo" src="/img/cdl_logo.png"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,11 +48,7 @@
                           Empresas
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="/login/empresa">Entrar</a></li>
-                        <li><a class="dropdown-item" href="/filtra/candidato/empresa">Busca Candidatos</a></li>
-                        <li><a class="dropdown-item" href="/anucio/empresa">Anúncio de vaga </a></li>
-                          <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                          <li><a class="dropdown-item" href="/login/empresa">Entrar</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
@@ -60,21 +56,21 @@
                           UTV
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="/login/utv">Entrar</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                          </ul>
+                          <li><a class="dropdown-item" href="/login/utv">Entrar</a></li>
+                          <li><a class="dropdown-item" href="/busca/candidato">Buscar</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                           OM's
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="/login/militar">Entrar</a></li>
-                            <li><a class="dropdown-item" href="/busca/militar">Ex Militares</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                          <li><a class="dropdown-item" href="/login/militar">Entrar</a></li>
+                          <li><a class="dropdown-item" href="/busca/militar">Ex Militares</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -84,6 +80,7 @@
           </div>
         </div>
       </nav>
+
       
       <div id="menu">
 

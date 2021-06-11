@@ -50,10 +50,6 @@
                       </a>
                       <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <li><a class="dropdown-item" href="/login/empresa">Entrar</a></li>
-                        <li><a class="dropdown-item" href="/filtra/candidato/empresa">Busca Candidatos</a></li>
-                        <li><a class="dropdown-item" href="/anucio/empresa">Anúncio de vaga </a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
                       </ul>
                   </li>
                   <li class="nav-item dropdown">
