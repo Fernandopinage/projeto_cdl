@@ -1,8 +1,3 @@
-
-.container{
-  background-image: url('/img/Login_empresa.jpg');
-}
-
 #logo{
     
     width: 150px;
@@ -13,6 +8,14 @@
     #menu{
       padding: 30px;
       background-color: #284D92;
+  }
+  #container-fluid{
+    background: url('/img/Login_empresa.jpg');
+   
+    background-position: center;
+    background-size: cover; 
+
+    border: 1px solid rgb(22, 22, 22);
   }
   
     .form-signin {

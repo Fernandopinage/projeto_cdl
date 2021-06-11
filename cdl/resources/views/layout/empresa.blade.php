@@ -86,8 +86,8 @@
 
       </div>
 
-    <div class="container">
-
+    <div class="container-fluid" id="container-fluid">
+      
         @yield('login')
 
     </div>

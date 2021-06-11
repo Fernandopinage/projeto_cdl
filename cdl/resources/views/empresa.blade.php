@@ -30,7 +30,5 @@
 
 </form>
 
-<div class="photo">
-   
-</div>
+
 @endsection
