@@ -10,14 +10,21 @@
       background-color: #284D92;
   }
   .folder{
-    padding: 60px;
+    padding: 60px 0px 60px 50px;
     background: url('/img/Login_empresa.jpg');
-    height: 100%;
-    background-position: center;
     background-size: cover; 
+    background-attachment: fixed, scroll;
+    background-repeat: no-repeat, repeat-y;
     /*border: 0px solid rgb(22, 22, 22);*/
   }
-  
+  @media only screen and (max-width: 800px) {
+    .folder{
+      margin: 7px 7px 7px 7px;
+      background: url();
+      padding: 0px;
+    }
+  }
+
     .form-signin {
       max-width: 480px;
       padding: 35px 35px 45px 35px;
@@ -30,8 +37,6 @@
     
     }
   
- 
-
    #link1{
         color: #242966;
     }
@@ -72,4 +77,4 @@
       .photo{
           display:none;
       }
-  }
+    }

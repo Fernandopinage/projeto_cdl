@@ -18,7 +18,7 @@ class CreateUtvCursos extends Migration
         Schema::create('TBL_UTVCURSO', function (Blueprint $table) {
             
             $table->integer('utv_id')->unsigned();              //  id auto incremento
-            $table->string('can_foto',250);                     //  folder do curso
+            $table->string('can_folder',250);                     //  folder do curso
             $table->date('utv_data_inicio');                    // data de inicio do curso
             $table->date('utv_data_final');                     // data de final do curso
             $table->string('utv_titulo',100);                   // titulo do curso 
