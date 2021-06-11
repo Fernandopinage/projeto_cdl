@@ -26,6 +26,8 @@ class CreateFuncionarios extends Migration
             $table->string('fun_telefone',14);          //  telefone 1 
             $table->string('fun_telefone2',14);         //  telefone 2 
             $table->string('fun_senha',100);            //  senha cryptografada 
+            $table->string('fun_status',100);           //  ativo ou inativo
+            $table->string('fun_perfil',100);           //  perfil de acesso
             
             //$table->integer('contato_id')->unsigned();             //  chave estrangeira tabela administrativa
             // $table->foreign('usuario_id')->references('id')->on('usuarios')->onDelete('cascade');
