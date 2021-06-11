@@ -39,6 +39,9 @@ Route::get('add/candidato',[CandidatoController::class,'formularioCandidato']); 
 
 
 Route::get('login/empresa',[EmpresaController::class,'index']); // chamando tela de login da empresa
+Route::get('home/empresa',function(){
+    return view('home_emp');
+});
 Route::post('/validar/empresa',[EmpresaController::class,'validarLogin']); // tela de login da empresa 
 Route::get('add/empresa',[EmpresaController::class,'formularioEmpresa']); // tela de formulario cadastro de empresa
 Route::post('/insert/empresa',[EmpresaController::class, 'store']); // submetendo formulario de empresa cadastro
