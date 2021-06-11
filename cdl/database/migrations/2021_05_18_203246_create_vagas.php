@@ -39,11 +39,8 @@ class CreateVagas extends Migration
             $table->char('vag_opcao',100)->nullable();              // opão para vaga é remoto       
             $table->char('vag_oculta',1)->nullable();               // ocultar empresa  (obrigatprio)     
 
-            $table->char('vag_idioma_necessario',1)->nullable();                //  Campo responsavel por pergunta se necessario o idioma
-            $table->json('vag_idioma')->nullable();                           //  Campo referente qual idioma foi marcado
-            $table->char('vag_idioma_escrita_ingl',1)->nullable();              //  Campo referente se escrita do candidato
-            $table->char('vag_idioma_leitura_ingl',1)->nullable();              //  Campo referente a nível de habilidade de leitura  
-            
+            $table->char('vag_idioma_necessario',1)->nullable();    //  Campo responsavel por pergunta se necessario o idioma CAMPO FORMATO SELECT
+                       
             $table->char('vag_idioma_escrita_espa',1);              //  Campo referente se escrita do candidato
             $table->char('vag_idioma_leitura_espa',1);              //  Campo referente a nível de habilidade de leitura  
 

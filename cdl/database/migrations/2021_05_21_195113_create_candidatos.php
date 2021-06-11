@@ -17,6 +17,17 @@ class CreateCandidatos extends Migration
 
         Schema::create('TBL_CANDIDATOS', function (Blueprint $table) {
 
+              /*
+              $table->string('can_descricao',100);        
+              $table->string('can_leitura',100);          
+              $table->string('can_escrita',100);          
+              $table->string('can_conversacao',100);     
+              
+              faz relacionamento com tabela idioma o ID do candidato vira chave estrangeira no idioma
+
+              */
+
+
             $table->integer('can_id')->unsigned();      //  chave primaria auto incremento
             $table->string('can_foto',250);             //  foto do candidato
             $table->string('can_nome',100);             //  nome do candidado 
@@ -54,18 +65,10 @@ class CreateCandidatos extends Migration
             $table->char('can_status',1);               //  ativo ou inativo
 
 
-            $table->char('can_idioma',1);               //  Campo referente à idiomas do candidato
-            $table->char('can_idioma_escrita_ingl',1);  //  Campo referente se escrita do candidato
-            $table->char('can_idioma_leitura_ingl',1);  //  Campo referente a nível de habilidade de leitura  
-
-            $table->char('can_idioma_escrita_espa',1);  //  Campo referente se escrita do candidato
-            $table->char('can_idioma_leitura_espa',1);  //  Campo referente a nível de habilidade de leitura  
-
-            $table->char('can_idioma_escrita_fran',1);  //  Campo referente se escrita do candidato
-            $table->char('can_idioma_leitura_fran',1);  //  Campo referente a nível de habilidade de leitura 
-
-            $table->char('can_idioma_escrita_outr',1);  //  Campo referente se escrita do candidato
-            $table->char('can_idioma_leitura_outr',1);  //  Campo referente a nível de habilidade de leitura 
+            $table->string('can_descricao',100);        //  campo referente a linguagem   campo formado select
+            $table->string('can_leitura',100);          //  campo referente ao nivel de leitura    campo formado select
+            $table->string('can_escrita',100);          //  campo referente ao nivel de escrita    campo formado select
+            $table->string('can_conversacao',100);      //  campo referente ao nivel de conversação campo formado select
 
 
             $table->char('can_curso_utv',1);            //  campo onde pergunta se possui curso UTV
