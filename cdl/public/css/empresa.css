@@ -9,12 +9,12 @@
       padding: 30px;
       background-color: #284D92;
   }
-  #container-fluid{
+  .folder{
     background: url('/img/Login_empresa.jpg');
+    height: 100%;
    
     background-position: center;
     background-size: cover; 
-
     border: 1px solid rgb(22, 22, 22);
   }
   
