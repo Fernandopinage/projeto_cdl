@@ -65,8 +65,6 @@ class VagasController extends Controller
         ]);
 
         // Cadastra os dados para vagas
-
-
         
         $anucio = new Vagas();
         $anucio->vag_data_inicio = $request->datainicio;
@@ -88,16 +86,7 @@ class VagasController extends Controller
         $anucio->vag_bairro = $request->bairro;
         $anucio->vag_descricao = $request->descricao;
         $anucio->vag_idioma_necessario = $request->idioma_necessario;
-        $anucio->vag_idioma = $request->itens;
-        
-        $anucio->vag_idioma_escrita_ingl = $request->escrita_ingles;   
-        $anucio->vag_idioma_leitura_ingl = $request->leitura_ingles;
-        $anucio->vag_idioma_escrita_espa = $request->escrita_espanhol;   
-        $anucio->vag_idioma_leitura_espa = $request->leitura_espanhol;
-        $anucio->vag_idioma_escrita_fran = $request->escrita_frances;   
-        $anucio->vag_idioma_leitura_fran = $request->leitura_frances;
-        $anucio->vag_idioma_escrita_outr = $request->escrita_outros;   
-        $anucio->vag_idioma_leitura_outr = $request->leitura_outros;
+        $anucio->vag_idioma = $request->idioma;
 
         $anucio->vag_salario = $request->salario;
         $anucio->vag_pcd = $request->pcd;

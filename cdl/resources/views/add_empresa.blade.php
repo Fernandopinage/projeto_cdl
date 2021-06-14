@@ -44,7 +44,7 @@
                     <input type="text" class="form-control form-control-sm" name="cnpj" placeholder="">
                 </div>
                 <div class="col-md-5">
-                    <label class="form-check-label" for="flexCheckIndeterminate">Email da empresa </label>
+                    <label class="form-check-label" for="flexCheckIndeterminate">Email da empresa <span><strong>*</strong></span></label>
                     <input type="text" class="form-control form-control-sm" name="email" placeholder="">
                 </div>
                 <div class="col-md-2">

@@ -66,9 +66,14 @@ class EmpresaController extends Controller
                     'razao'=>'required',
                     'cnpj'=>'required',
                     'ramo'=>'required',
+                    'email' => 'required',
                     'cep'=>'required',
                     'termo'=>'required'
                 ]);
+
+                $vowels = array("(", ")", "-", " ");
+
+
                 // Verificando se os campos de senhas são iguais     
         if($request->senha === $request->confirmar){
 

@@ -72,17 +72,27 @@
 <script>
     $(document).ready(function() {
 
-      $('#leitura_ingles').hide();
-      $('#escrita_ingles').hide();
-      $('#leitura_espanhol').hide();
-      $('#escrita_espanhol').hide();
-      $('#leitura_frances').hide();
-      $('#escrita_frances').hide();
-      $('#leitura_outros').hide();
-      $('#escrita_outros').hide();
+
       $('#descPCD').hide();
-      $('#idioma_nome').hide();
+      $('#idioma').hide();
       
+        $('#idioma_necessario').change(function(){
+
+        if($("#idioma_necessario:checked").val() == undefined){
+            $("#idioma_necessario").prop('checked', false);
+            $('#idioma').hide(); 
+            
+        }else{
+          $("#idioma_necessario").prop('checked', true);
+          $('#idioma').show();  
+          $
+        }
+
+
+      });
+
+
+
       $('#pcd').change(function(){
 
         if($("#pcd:checked").val() == undefined){
@@ -98,67 +108,6 @@
 
       });
 
-      $('#ingle').change(function(){
-
-        if($("#ingle:checked").val() == undefined){
-            $("#ingle").prop('checked', false);
-            $('#leitura_ingles').hide(); 
-            $('#escrita_ingles').hide(); 
-        }else{
-          $("#ingle").prop('checked', true);
-          $('#leitura_ingles').show();  
-          $('#escrita_ingles').show();
-        }
-
-
-      });
-
-      $('#espanhol').change(function(){
-
-        if($("#espanhol:checked").val() == undefined){
-            $("#espanhol").prop('checked', false);
-            $('#leitura_espanhol').hide(); 
-            $('#escrita_espanhol').hide(); 
-        }else{
-          $("#espanhol").prop('checked', true);
-          $('#leitura_espanhol').show();  
-          $('#escrita_espanhol').show();
-        }
-
-
-      });
-
-      $('#frances').change(function(){
-
-        if($("#frances:checked").val() == undefined){
-            $("#frances").prop('checked', false);
-            $('#leitura_frances').hide(); 
-            $('#escrita_frances').hide(); 
-        }else{
-          $("#frances").prop('checked', true);
-          $('#leitura_frances').show();  
-          $('#escrita_frances').show();
-        }
-
-
-      });
-
-        $('#outros').change(function(){
-
-        if($("#outros:checked").val() == undefined){
-            $("#outros").prop('checked', false);
-            $('#leitura_outros').hide(); 
-            $('#escrita_outros').hide(); 
-            $('#idioma_nome').hide();
-        }else{
-          $("#outros").prop('checked', true);
-          $('#leitura_outros').show();  
-          $('#escrita_outros').show();
-          $('#idioma_nome').show();
-        }
-
-
-      });
 
     });
 

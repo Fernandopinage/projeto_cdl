@@ -23,8 +23,8 @@ class CreateEmpresas extends Migration
             $table->string('emp_razao',100)->nullable();            // razao da empresa (obrigatorio)
             $table->string('emp_cnpj',14)->nullable();    // cnpj da empresa (obrigatorio)
             $table->string('emp_atividade',100)->nullable();        // Área de atividade (obrigatorio)
-            $table->string('emp_telefone',14)->nullable();          // Telefone da empresa
-            $table->string('emp_celular',14)->nullable();           // Celular da empresa
+            $table->string('emp_telefone',20)->nullable();          // Telefone da empresa
+            $table->string('emp_celular',20)->nullable();           // Celular da empresa
             $table->string('emp_cep')->nullable();                // CEP da empresa[autocompletar endereço pelo CEP] (obrigatorio)
             $table->string('emp_logrador',100)->nullable();         // Logradouro
             $table->string('emp_numero',10)->nullable();            // Nº endereço da empresa 
