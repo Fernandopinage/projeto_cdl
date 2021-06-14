@@ -20,8 +20,8 @@ class EmpresaController extends Controller
       
 
         $request->validate([
-            'email' => 'required',                  //request de email do formulario 
-            'password' => 'required',               //request de senha do formulario 
+            'email' => 'required',     //request de email do formulario 
+            'password' => 'required',  //request de senha do formulario 
         ]);
    
         $empresa =  Empresa::where('emp_email',$request->email)->first();       // selecionando o usuario 
@@ -29,13 +29,13 @@ class EmpresaController extends Controller
             if(!empty($empresa)){                                               //  caso tenha valor dentro da variavel empresa
 
                 if (Hash::check($request->password, $empresa->emp_senha)) {     //  decodificando senha hash 
-                    echo "ok";                                                  // redirecinanmento se estiver tudo certo
+                    return redirect('home/empresa');                                  // redirecinanmento se estiver tudo certo
                 }else{
-                    return redirect('/login/empresa')->with('mensagem', 'Email ou Senha incorretos!');     // redirecinamento caso senha nao seja valida
+                    return redirect('/login/empresa')->with('mensagem', 'Email ou Senha incorretos!'); // redirecinamento caso senha nao seja valida
                 }
             }else{
 
-                return redirect('/login/empresa')->with('mensagem', 'Email ou Senha incorretos!');                 // caso não existe o email
+                return redirect('/login/empresa')->with('mensagem', 'Email ou Senha incorretos!');   // caso não existe o email
             }
            
     }
@@ -43,6 +43,11 @@ class EmpresaController extends Controller
     public function index()
     {
         return view('empresa');
+    }
+
+    public function home(){
+
+        return view('home_emp');
     }
     public function formularioEmpresa(){
 

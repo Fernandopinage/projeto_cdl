@@ -74,7 +74,7 @@
                 </div>
                 <div class="col-md-2">
                     <label class="form-check-label" for="flexCheckIndeterminate">Ano de termino </label>
-                    <input type="number" min="1900" max="2099" class="form-control form-select-sm" name="termino" placeholder="">
+                    <input type="month"  class="form-control form-select-sm" name="termino" placeholder="">
                 </div>
                 <div class="col-md-2">
                     <label class="form-check-label" for="flexCheckIndeterminate">Semestre em Curso </label>
