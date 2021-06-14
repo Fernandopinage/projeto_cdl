@@ -41,7 +41,7 @@
 
                 <div class="col-md-3">
                     <label class="form-check-label" for="flexCheckIndeterminate">CNPJ <span><strong>*</strong></span></label>
-                    <input type="text" class="form-control form-control-sm" name="cnpj" placeholder="">
+                    <input type="text" class="form-control form-control-sm" onfocus="javascript: retirarFormatacao(this);" onblur="javascript: formatarCampo(this);" name="cnpj" id="cnpj" placeholder="99.999.999/9999-99">
                 </div>
                 <div class="col-md-5">
                     <label class="form-check-label" for="flexCheckIndeterminate">Email da empresa <span><strong>*</strong></span></label>
@@ -79,6 +79,7 @@
             </div>  
         </div> 
         <br><br>
+        <hr>
         <span>  Campos Obrigatórios <strong>*</strong></span>
     </div>
 
@@ -126,6 +127,7 @@
         
     </div>
         <br><br>
+        <hr>
         <span>  Campos Obrigatórios <strong>*</strong></span>
     </div>
 
@@ -158,6 +160,8 @@
             </div>
         </div>
     </div>
+    <br><br>
+    <hr>
     </div>
 
     <div class="form-signin">
@@ -189,6 +193,8 @@
 </form>
 @endsection
 
+
+<!-- *************************validando telefone ************** -->
 <script type="text/javascript">
 function mask(o, f) {
   setTimeout(function() {
@@ -200,17 +206,41 @@ function mask(o, f) {
 }
 
 function mphone(v) {
-  var r = v.replace(/\D/g, "");
-  r = r.replace(/^0/, "");
-  if (r.length > 10) {
-    r = r.replace(/^(\d\d)(\d{5})(\d{4}).*/, "($1) $2-$3");
-  } else if (r.length > 5) {
-    r = r.replace(/^(\d\d)(\d{4})(\d{0,4}).*/, "($1) $2-$3");
-  } else if (r.length > 2) {
-    r = r.replace(/^(\d\d)(\d{0,5})/, "($1) $2");
-  } else {
-    r = r.replace(/^(\d*)/, "($1");
-  }
-  return r;
-}
+    var r = v.replace(/\D/g, "");
+    r = r.replace(/^0/, "");
+    if (r.length > 10) {
+        r = r.replace(/^(\d\d)(\d{5})(\d{4}).*/, "($1) $2-$3");
+    } else if (r.length > 5) {
+        r = r.replace(/^(\d\d)(\d{4})(\d{0,4}).*/, "($1) $2-$3");
+    } else if (r.length > 2) {
+        r = r.replace(/^(\d\d)(\d{0,5})/, "($1) $2");
+    } else {
+        r = r.replace(/^(\d*)/, "($1");
+    }
+    return r;
+    }
 </script>
+
+<!-- ----------------------------------------------------------------- -->
+
+<!-- *************************validando cnpj ************************* -->
+<script>
+    function formatarCampo(campoTexto) {
+        if (campoTexto.value.length <= 11) {
+            campoTexto.value = mascaraCpf(campoTexto.value);
+        } else {
+            campoTexto.value = mascaraCnpj(campoTexto.value);
+        }
+    }
+    function retirarFormatacao(campoTexto) {
+        campoTexto.value = campoTexto.value.replace(/(\.|\/|\-)/g,"");
+    }
+    function mascaraCpf(valor) {
+        return valor.replace(/(\d{3})(\d{3})(\d{3})(\d{2})/g,"\$1.\$2.\$3\-\$4");
+    }
+    function mascaraCnpj(valor) {
+        return valor.replace(/(\d{2})(\d{3})(\d{3})(\d{4})(\d{2})/g,"\$1.\$2.\$3\/\$4\-\$5");
+    }
+</script>
+
+    <!-- ----------------------------------------------------------------- -->
