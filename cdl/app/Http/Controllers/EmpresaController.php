@@ -13,7 +13,6 @@ class EmpresaController extends Controller
 {
     
 
-
         
     public function validarLogin(Request $request)
     {
@@ -29,6 +28,7 @@ class EmpresaController extends Controller
             if(!empty($empresa)){                                               //  caso tenha valor dentro da variavel empresa
 
                 if (Hash::check($request->password, $empresa->emp_senha)) {     //  decodificando senha hash 
+                    session(['user'=>'luiz']);
                     return redirect('home/empresa');                                  // redirecinanmento se estiver tudo certo
                 }else{
                     return redirect('/login/empresa')->with('mensagem', 'Email ou Senha incorretos!'); // redirecinamento caso senha nao seja valida

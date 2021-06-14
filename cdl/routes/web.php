@@ -39,8 +39,9 @@ Route::get('add/candidato',[CandidatoController::class,'formularioCandidato']); 
 
 
 
-Route::get('login/empresa',[EmpresaController::class,'index']); // chamando tela de login da empresa
-Route::middleware(['Auth'])->group(function () {
+Route::get('login/empresa',[EmpresaController::class,'index'])->name('login/empresa'); // chamando tela de login da empresa
+
+Route::middleware(['empresaGrupo'])->group(function () {
     Route::get('home/empresa',[EmpresaController::class,'home']);   //  redirecinando para tela home   
     Route::post('/validar/empresa',[EmpresaController::class,'validarLogin']); // tela de login da empresa 
     Route::get('add/empresa',[EmpresaController::class,'formularioEmpresa']); // tela de formulario cadastro de empresa
