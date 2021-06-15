@@ -41,7 +41,7 @@ Route::get('add/candidato',[CandidatoController::class,'formularioCandidato']); 
 
 Route::get('login/empresa',[EmpresaController::class,'index'])->name('login/empresa'); // chamando tela de login da empresa
 
-Route::middleware(['empresaGrupo'])->group(function () {
+//Route::middleware(['empresaGrupo'])->group(function () {
     Route::get('home/empresa',[EmpresaController::class,'home']);   //  redirecinando para tela home   
     Route::post('/validar/empresa',[EmpresaController::class,'validarLogin']); // tela de login da empresa 
     Route::get('add/empresa',[EmpresaController::class,'formularioEmpresa']); // tela de formulario cadastro de empresa
@@ -51,7 +51,7 @@ Route::middleware(['empresaGrupo'])->group(function () {
     Route::get('anucio/empresa',[EmpresaController::class,'anuciarVagas']); // chamndo tela de anucio
     Route::post('/filtra/candidato/empresa',[EmpresaController::class,'filtrarCandidato']); // filtrando candidato 
     Route::post('/anucie/vaga/empresa',[VagasController::class,'anucieVagas']);
-});
+//});
 
 Route::get('login/acesso',[acessoController::class,'index']);   // tela de acesso area administrativa
 Route::get('login/utv',[utvController::class,'index']);  // tela de acesso a utv

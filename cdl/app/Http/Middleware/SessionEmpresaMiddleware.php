@@ -16,8 +16,11 @@ class SessionEmpresaMiddleware
      */
     public function handle(Request $request, Closure $next)
     {
+        /*
         if (!$request->session()->has('users')) {
-          return redirect()->route('login/empresa');
+         // return redirect()->route('login/empresa');
         }
+        */
+        
     }
 }
