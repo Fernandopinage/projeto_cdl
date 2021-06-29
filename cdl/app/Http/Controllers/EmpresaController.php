@@ -30,7 +30,7 @@ class EmpresaController extends Controller
 
                 if (Hash::check($request->password, $empresa->emp_senha)) {     //  decodificando senha hash 
                     
-                    echo session()->put('empresa',$empresa['emp_email']);
+                    session()->put('empresa',$empresa['emp_email']);
                     return redirect('home/empresa');                                  // redirecinanmento se estiver tudo certo
 
                     
