@@ -44,6 +44,7 @@
 
             </ul>
           </div>
+          <p class="text-left" style="color:#284D92"><strong>Bem Vindo:</strong> {{session('empresa')}} &nbsp &nbsp<a href="#>"></a></p>
         </div>
       </nav>
      <!-- 
@@ -79,7 +80,7 @@
       </nav>
     -->
       <div id="menu">
-
+      
       </div>
       <div class="container-fluid">
 
