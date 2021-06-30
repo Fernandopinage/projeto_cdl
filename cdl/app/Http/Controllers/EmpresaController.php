@@ -17,8 +17,19 @@ class EmpresaController extends Controller
         
     public function validarLogin(Request $request)
     {
-      
 
+        $credentials = $request->validate([
+            'email' => ['required', 'email'],
+            'password' => ['required'],
+        ]);
+
+        if (Auth::attempt($credentials)) {
+            $request->session()->regenerate();
+
+            return redirect()->intended('home/empresa');
+        }
+      
+        /*
         $request->validate([
             'email' => 'required',     //request de email do formulario 
             'password' => 'required',  //request de senha do formulario 
@@ -41,7 +52,7 @@ class EmpresaController extends Controller
 
                 return redirect('/login/empresa')->with('mensagem', 'Email ou Senha incorretos!');   // caso não existe o email
             }
-           
+           */
     }
 
     public function index()
