@@ -37,6 +37,7 @@ class EmpresaController extends Controller
                 }else{
                     return redirect('/login/empresa')->with('mensagem', 'Email ou Senha incorretos!'); // redirecinamento caso senha nao seja valida
                 }
+                
             }else{
 
                 return redirect('/login/empresa')->with('mensagem', 'Email ou Senha incorretos!');   // caso não existe o email
