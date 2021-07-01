@@ -18,7 +18,6 @@ class EmpresaController extends Controller
     public function validarLogin(Request $request)
     {
 
- 
         $request->validate([
             'email' => 'required',     //request de email do formulario 
             'password' => 'required',  //request de senha do formulario 
@@ -37,12 +36,11 @@ class EmpresaController extends Controller
                 }else{
                     return redirect('/login/empresa')->with('mensagem', 'Email ou Senha incorretos!'); // redirecinamento caso senha nao seja valida
                 }
-                
             }else{
 
                 return redirect('/login/empresa')->with('mensagem', 'Email ou Senha incorretos!');   // caso não existe o email
             }
-           
+          
     }
 
     public function index()

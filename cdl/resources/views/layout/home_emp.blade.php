@@ -1,3 +1,8 @@
+@php
+  echo session('empresa');
+@endphp
+
+
 
 <!DOCTYPE html>
 <html lang="pt-br">

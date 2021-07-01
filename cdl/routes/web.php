@@ -38,7 +38,7 @@ Route::get('login/candidato', [CandidatoController::class, 'index']); // chamand
 Route::get('busca/candidato', [CandidatoController::class, 'selectCandidato']); // chamando tela  busca candidato 
 Route::get('add/candidato', [CandidatoController::class, 'formularioCandidato']); // chamando tela de formulario do candidato
 
-
+/******************** Empresa ******************************/
 
 Route::get('login/empresa', [EmpresaController::class, 'index'])->name('login/empresa'); // chamando tela de login da empresa
 Route::get('home/empresa', [EmpresaController::class, 'home']);   //  redirecinando para tela home   
@@ -51,7 +51,7 @@ Route::get('anucio/empresa', [EmpresaController::class, 'anuciarVagas']); // cha
 Route::post('/filtra/candidato/empresa', [EmpresaController::class, 'filtrarCandidato']); // filtrando candidato 
 Route::post('/anucie/vaga/empresa', [VagasController::class, 'anucieVagas']);
 
-
+/******************** --------------------------------------- ******************************/
 
 Route::get('login/acesso', [acessoController::class, 'index']);   // tela de acesso area administrativa
 Route::get('login/utv', [utvController::class, 'index']);  // tela de acesso a utv
